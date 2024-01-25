@@ -1,0 +1,9 @@
+body{
+    margin: 0px;
+}
+
+nav{
+    height: 4dvh;
+    display: flexbox;
+    flex-wrap: wrap;
+}
