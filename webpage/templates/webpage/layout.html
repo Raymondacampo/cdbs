@@ -1,3 +1,4 @@
+{% load sass_tags %}
 {% load static %}
 <!DOCTYPE html>
 <html lang="en">
@@ -5,22 +6,55 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CDBS</title>
+    <link rel="stylesheet" href="{% sass_src 'scss/layout.scss' %}">
 </head>
 <body>
     <nav>
         <div class="nav_bar">
-            <img src="{% static 'images/cdbslogo.png' %}" height="50px" alt="">
-            <ul class="nav_items">
-                <li>Clases</li>
-                <li>Tienda</li>
-                <li>Eventos</li>
-            </ul>
-            <ul class="redes">
-                <li><a href="https://www.facebook.com/">F<img src="" alt=""></a></li>
-                <li><a href="https://www.instagram.com/">I<img src="" alt=""></a></li>
-                <li><a href="https://www.tiktok.com/">T<img src="" alt=""></a></li>
-            </ul>
+            <div class="logo"><a href="{% url 'index' %}"><img src="{% static 'images/cdbslogo.png' %}" height="70px"></a></div>
+            <div class="nav_items">
+                    <a class="nav_item" href="{% url 'clases' %}">Clases</a>
+                    <a class="nav_item" href="{% url 'tienda' %}">Tienda</a>
+                    <a class="nav_item" href="{% url 'eventos' %}">Eventos</a>
+                </ul>
+            </div>
+
+            <div class="desp_menu">
+                <button id="menu_trigger"><img src="{% static 'images/ddmenu.png' %}" height="50px" alt=""></button>
+            </div>
+        </div>
+        <div id="dcm" class="desp_content">
+            <a class="nav_item" href="{% url 'clases' %}">Clases</a>
+            <a class="nav_item" href="{% url 'tienda' %}">Tienda</a>
+            <a class="nav_item" href="{% url 'eventos' %}">Eventos</a>
         </div>
     </nav>
+    {% block body %}
+    {% endblock %}
+    <hr>
+    <footer>
+        <div class="footer">
+            <div><img src="{% static 'images/cdbslogo.png' %}" height="60px"></div>
+            <div>Av. 27 de Febrero. 375, Esq. Dr. Defillo, Ens, Av 27 de Febrero 375, Santo Domingo</div>
+            <div>
+                <a href=""><img src="{% static 'images/instagrampink.jpg' %}" height="50px"></a>
+                <a href=""><img src="{% static 'images/pinkfacebook.png' %}" height="50px"></a>
+                <a href=""><img src="{% static 'images/tiktokpink.jpg' %}" height="50px"></a>
+            </div>
+        </div>   
+    </footer>
+    <script>
+        document.querySelector('#menu_trigger').addEventListener('click', function(){
+            const menu = document.querySelector('#dcm')
+            if( menu.style.display== 'flex') {
+                menu.style.display  = 'none' 
+                document.querySelector('#navbar_hr').style.display = 'block';
+            } else {
+                menu.style.display = 'flex'
+                document.querySelector('#navbar_hr').style.display = 'none';
+            }
+                       
+        })
+    </script>
 </body>
 </html>

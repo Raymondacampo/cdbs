@@ -1,1 +1,29 @@
 {% extends "webpage/layout.html" %}
+{% block body %}
+{% load static %}
+<div class="indx_container">
+    <div>
+    </div>
+</div>
+
+<div class="descubrelo">
+<div>Descúbrelo!</div>
+</div>
+
+<div class="indx_container0">
+    <div class="flex_idx">
+        <a href="{% url 'clases'%}"><img src="/static/images/ninas.jpg"></a>
+        <div class="titl"><span >Clases de baile</span></div>
+    </div>
+    <div class="flex_idx">
+        <a href="{% url 'clases'%}"><img src="/static/images/iuiu.jpg"></a>
+        <div class="titl"><span>Tienda</span></div>
+
+    </div>
+    <div class="flex_idx">
+        <a href="{% url 'clases'%}"><img src="/static/images/evento.jpg"></a>
+        <div class="titl"><span>Eventos</span></div>
+    </div>
+</div>
+
+{% endblock %}

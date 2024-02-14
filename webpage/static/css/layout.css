@@ -1,9 +1,20 @@
-body{
-    margin: 0px;
+body {
+  margin: 0px;
 }
 
-nav{
-    height: 4dvh;
-    display: flexbox;
-    flex-wrap: wrap;
+.nav_bar {
+  background-color: aqua;
+  height: 10dvh;
+  display: flex;
 }
+.nav_bar div {
+  flex-wrap: wrap;
+}
+.nav_bar div ul {
+  display: flex;
+}
+.nav_bar div ul li {
+  margin: 10px;
+}
+
+/*# sourceMappingURL=layout.css.map */
