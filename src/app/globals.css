@@ -1,0 +1,71 @@
+@import "tailwindcss";
+
+/*
+ * Fonts: Inter (body) and Quicksand (headings/display)
+ * To use Google Fonts, add this to your <head> (e.g., via a <link> in layout.tsx,
+ * or by adding a <GoogleFonts> component):
+ *
+ *   https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Quicksand:wght@400;500;600;700&display=swap
+ *
+ * Or install and self-host with `next/font/google` (requires internet at build time).
+ */
+
+/* ── Custom design tokens ──────────────────────────────── */
+@theme inline {
+  --color-blush:    #F2C9D8;
+  --color-pink:     #E996B4;
+  --color-peach:    #F5E1DB;
+  --color-dark:     #13292A;
+  --color-white:    #FFFFFF;
+
+  --font-sans:      Inter, "Helvetica Neue", Arial, sans-serif;
+  --font-display:   Quicksand, "Helvetica Neue", Arial, sans-serif;
+}
+
+/* ── Base styles ────────────────────────────────────────── */
+body {
+  background-color: #ffffff;
+  color: #13292A;
+  font-family: Inter, "Helvetica Neue", Arial, sans-serif;
+}
+
+/* ── Custom heading classes (use as className="h1" etc.) ─── */
+.h1 {
+  font-family: Quicksand, "Helvetica Neue", Arial, sans-serif;
+  font-size: 3rem;
+  font-weight: 700;
+  line-height: 1.1;
+  color: #13292A;
+}
+
+.h2 {
+  font-family: Quicksand, "Helvetica Neue", Arial, sans-serif;
+  font-size: 2.25rem;
+  font-weight: 700;
+  line-height: 1.2;
+  color: #13292A;
+}
+
+.h3 {
+  font-family: Quicksand, "Helvetica Neue", Arial, sans-serif;
+  font-size: 1.75rem;
+  font-weight: 600;
+  line-height: 1.3;
+  color: #13292A;
+}
+
+.h4 {
+  font-family: Quicksand, "Helvetica Neue", Arial, sans-serif;
+  font-size: 1.375rem;
+  font-weight: 600;
+  line-height: 1.4;
+  color: #13292A;
+}
+
+.h5 {
+  font-family: Quicksand, "Helvetica Neue", Arial, sans-serif;
+  font-size: 1.125rem;
+  font-weight: 600;
+  line-height: 1.4;
+  color: #13292A;
+}
