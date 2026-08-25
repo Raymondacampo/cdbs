@@ -1,7 +1,10 @@
 "use client";
 
 import Link from "next/link";
+import Image from "next/image";
 import { useState } from "react";
+import CDBS from "../../public/images/dashboard/CDBS.png";
+
 
 const links = [
   { label: "Home",       href: "/" },
@@ -16,11 +19,11 @@ export default function Navbar() {
   const [open, setOpen] = useState(false);
 
   return (
-    <header className="bg-white text-dark sticky top-0 z-50 shadow-md">
+    <header className="bg-white text-dark sticky top-0 z-50 shadow-sm">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex items-center justify-between h-16">
         {/* Logo */}
         <Link href="/" className="font-[Quicksand,sans-serif] font-bold text-xl text-pink tracking-wide">
-          CDBS
+          <Image src={CDBS} alt="CDBS Logo" className="w-48 h-auto" />
         </Link>
 
         {/* Desktop nav */}
