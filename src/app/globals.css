@@ -31,7 +31,7 @@ body {
 
 /* ── Custom heading classes (use as className="h1" etc.) ─── */
 .h1 {
-  font-family: Quicksand, "Helvetica Neue", Arial, sans-serif;
+  font-family: Inter, "Helvetica Neue", Arial, sans-serif;
   font-size: 3rem;
   font-weight: 700;
   line-height: 1.1;
@@ -39,7 +39,7 @@ body {
 }
 
 .h2 {
-  font-family: Quicksand, "Helvetica Neue", Arial, sans-serif;
+  font-family: Inter, "Helvetica Neue", Arial, sans-serif;
   font-size: 2.25rem;
   font-weight: 700;
   line-height: 1.2;
@@ -47,7 +47,7 @@ body {
 }
 
 .h3 {
-  font-family: Quicksand, "Helvetica Neue", Arial, sans-serif;
+  font-family: Inter, "Helvetica Neue", Arial, sans-serif;
   font-size: 1.75rem;
   font-weight: 600;
   line-height: 1.3;
@@ -55,7 +55,7 @@ body {
 }
 
 .h4 {
-  font-family: Quicksand, "Helvetica Neue", Arial, sans-serif;
+  font-family: Inter, "Helvetica Neue", Arial, sans-serif;
   font-size: 1.375rem;
   font-weight: 600;
   line-height: 1.4;
