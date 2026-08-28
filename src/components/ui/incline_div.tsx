@@ -26,7 +26,7 @@ const colorClasses: Record<Color, string> = {
 const sizeClasses: Record<Size, string> = {
   sm: "px-3 text-sm",
   md: "px-5 text-base",
-  lg: "px-7 text-8xl font-black",
+  lg: "md:px-7 text-3xl md:text-6xl lg:text-7xl xl:text-8xl font-black",
 };
 
 export default function InclineDiv({
@@ -40,7 +40,7 @@ export default function InclineDiv({
 }: InclineDivProps) {
   return (
     <div className={[
-        "absolute w-full shadow-lg left-0 py-8 text-shadow-2xs [word-spacing:0.5rem]",
+        "absolute w-full flex justify-center shadow-lg left-0 py-6 md:py-8 text-shadow-2xs [word-spacing:0.5rem]",
         variantClasses[variant],
         colorClasses[color],
         sizeClasses[size],
@@ -49,7 +49,9 @@ export default function InclineDiv({
       ].filter(Boolean).join(" ")}
       {...props}
     >
-      {children}
+        <h1 className="w-full text-center md:text-start md:max-w-7xl text-shadow-2xs [word-spacing:0.5rem]">
+            {children}
+        </h1>
     </div>
   );
 }

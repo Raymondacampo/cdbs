@@ -19,11 +19,11 @@ export default function Navbar() {
   const [open, setOpen] = useState(false);
 
   return (
-    <header className="bg-white text-dark sticky top-0 z-50 shadow-sm">
+    <header className="bg-white text-dark top-0 z-50">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex items-center justify-between h-16">
         {/* Logo */}
         <Link href="/" className="font-[Quicksand,sans-serif] font-bold text-xl text-pink tracking-wide">
-          <Image src={CDBS} alt="CDBS Logo" className="w-48 h-auto" />
+          <Image src={CDBS} alt="CDBS Logo" className="w-30 md:w-48 h-auto" />
         </Link>
 
         {/* Desktop nav */}
