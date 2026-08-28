@@ -39,7 +39,7 @@ export default function DashboardPage() {
   return (
     <div className="min-h-[80vh]">
       {/* Hero section */}
-      <section className="flex items-end overflow-hidden bg-blush min-h-[120dvw]  px-4 relative text-center shadow-xl 
+      <section className="flex items-end overflow-hidden bg-blush min-h-[130dvw]  px-4 relative text-center shadow-xl 
       md:mb-8 md:min-h-[70dvh] md:max-h-none">
       <InclineDiv variant="right" color="pink" size="lg" className="md:mt-24 lg:mt-16 text-start top-16 z-10">LAS MAS<br className="hidden lg:block"></br> PEQUEÑAS</InclineDiv>
         <div className="flex relative w-full h-full justify-between items-end mx-auto max-w-7xl">
@@ -53,11 +53,11 @@ export default function DashboardPage() {
             </P>
             <div className="flex flex-wrap gap-4 justify-start">
               <Link href="/ballet" >
-                <Button className="hover:cursor-pointer" size="lg">Explore Classes</Button>
+                <Button className="hover:cursor-pointer" size="lg">Ver clases</Button>
               </Link>
             </div>
           </div>
-          <Image src={pequenas} alt="Dance hero" className="absolute -right-28 bottom-0 z-10 max-w-64 
+          <Image src={pequenas} alt="Dance hero" className="absolute -right-34 bottom-0 z-10 max-w-76 
           md:max-w-none md:w-[60%] md:relative md:right-0
           lg:w-120" />
         </div>
@@ -115,7 +115,7 @@ export default function DashboardPage() {
           <div className="rounded-xl py-6 transition-shadow flex flex-col justify-end top-10 mr-auto
           md:hidden">
             <Image src={recitallogo} alt={'Recital Logo'} className="w-50"/>
-            <Link href="/recital">
+            <Link href="/recital" className="flex justify-end">
               <Button size="md" className="w-[70%] mx-auto">
                 Ver Tienda
               </Button>

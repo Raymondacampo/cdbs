@@ -13,8 +13,8 @@ export default function HiphopJazzPage() {
       <Class
         phone="text-dark top-4 max-w-[75%] mr-auto"
         desktop="md:max-w-[65%] md:-top-8 lg:top-4 md:mr-8"
-        img={{ src: hipkids, width: "w-[50dvw] md:w-[35dvh] lg:w-[35dvh]", 
-        position: "absolute -right-16 bottom-14 md:-rotate-1 md:-right-20 md:bottom-8 lg:-bottom-4 lg:-left-8 lg:relative " }}
+        img={{ src: hipkids, width: "w-[55dvw] md:w-[35dvh] lg:w-[35dvh]", 
+        position: "absolute -right-24 -rotate-12 bottom-10 md:-rotate-1 md:-right-20 md:bottom-8 lg:-bottom-4 lg:-left-8 lg:relative " }}
         bannercolor="bg-pink"
         bg="bg-peach"
         dayTime={{ dayTimes: [
@@ -34,7 +34,7 @@ export default function HiphopJazzPage() {
       <Class
         phone="text-dark top-8 max-w-[70%]"
         desktop="md:max-w-[65%] md:top-4 md:mr-8"
-        img={{ src: jazzhop, width: "w-[40dvw] md:w-[32dvh] lg:w-[35dvh]", position: "absolute lg:relative left-0 md:left-0 bottom-0 md:bottom-12" }}
+        img={{ src: jazzhop, width: "w-[45dvw] md:w-[32dvh] lg:w-[35dvh]", position: "absolute lg:relative left-0 md:left-0 bottom-0 md:bottom-12" }}
         bannercolor="bg-pink"
         bg="bg-peach"
         dayTime={{ dayTimes: [
@@ -53,7 +53,7 @@ export default function HiphopJazzPage() {
       <Class
         phone="text-dark top-8 max-w-[75%]"
         desktop="md:max-w-[65%] md:top-4 md:mr-8"
-        img={{ src: hiphop, width: "w-[50dvw] md:w-[30dvh] lg:w-[40dvh]", position: "absolute -right-4 bottom-12 md:-bottom-2 md:-rotate-1 md:bottom-1 lg:-left-8 lg:-bottom-3.5 lg:relative" }}
+        img={{ src: hiphop, width: "w-[55dvw] md:w-[30dvh] lg:w-[40dvh]", position: "absolute -right-12 bottom-12 md:-bottom-2 md:-rotate-1 md:bottom-1 lg:-left-8 lg:-bottom-3.5 lg:relative" }}
         bannercolor="bg-pink"
         bg="bg-peach"
         dayTime={{ dayTimes: [
@@ -73,7 +73,7 @@ export default function HiphopJazzPage() {
       <Class
         phone="text-dark top-6 max-w-[75%]"
         desktop="md:max-w-[65%] md:top-4 md:mr-8"
-        img={{ src: jazz, width: "w-[40dvw] md:w-[25dvh] lg:w-[40dvh]", position: "absolute lg:relative -left-6 md:-left-0 md:bottom-8 bottom-0" }}
+        img={{ src: jazz, width: "w-[45dvw] md:w-[25dvh] lg:w-[40dvh]", position: "absolute bottom-4 lg:relative -left-12 md:-left-0 md:bottom-8 bottom-0" }}
         bannercolor="bg-pink"
         bg="bg-peach"
         dayTime={{ dayTimes: [

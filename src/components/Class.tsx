@@ -89,7 +89,7 @@ export default function Class({
                         <div className="flex flex-col gap-1">
                                 {dayTime.dayTimes.map(dt => 
                                 <div className="flex flex-col " key={dt.day}>
-                                    <p className={`text-xs md:text-xl ${bannercolor === 'bg-peach' ? 'text-shadow:1.5px_1.5px_1px_rgba(0,0,0,0.5)' : ''} max-w-xl font-bold [word-spacing:2px]`}>{`${dt.day}`}</p>
+                                    <p className={`text-sm md:text-xl ${bannercolor === 'bg-peach' ? 'text-shadow:1.5px_1.5px_1px_rgba(0,0,0,0.5)' : ''} max-w-xl font-bold [word-spacing:2px]`}>{`${dt.day}`}</p>
                             </div>)}
                         </div>                    
                     </div>
@@ -97,7 +97,7 @@ export default function Class({
                         <Clock className={`w-6 h-6 md:w-8 md:h-8`} />
                         <div className="flex flex-col gap-1">{dayTime.dayTimes.map(dt => 
                             <div className="flex flex-col" key={dt.day}>
-                                <p className={`text-xs md:text-xl ${bannercolor === 'bg-peach' ? 'text-shadow:1.5px_1.5px_1px_rgba(0,0,0,0.5)' : ''} max-w-xl font-bold [word-spacing:2px]`}>{`${dt.time}`}</p>
+                                <p className={`text-sm md:text-xl ${bannercolor === 'bg-peach' ? 'text-shadow:1.5px_1.5px_1px_rgba(0,0,0,0.5)' : ''} max-w-xl font-bold [word-spacing:2px]`}>{`${dt.time}`}</p>
                             </div>)}
                         </div>                    
                     </div>                    
@@ -110,7 +110,7 @@ export default function Class({
                 <Button size="md" className="w-32! h-10 mt-4">
                     Inscribirme!
                 </Button>  
-                <p className={`text-center text-xs md:text-base mt-4 ${bannercolor === 'bg-peach' ? 'text-shadow:1.5px_1.5px_1px_rgba(0,0,0,0.4)' : ''}`}>{description}</p>              
+                <p className={`text-center text-sm md:text-base mt-4 font-display ${bannercolor === 'bg-peach' ? 'text-shadow:1.5px_1.5px_1px_rgba(0,0,0,0.4)' : ''}`}>{description}</p>              
             </div>
 
         </div>

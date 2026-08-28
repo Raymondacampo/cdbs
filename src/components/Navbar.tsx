@@ -10,7 +10,7 @@ const links = [
   { label: "Home",       href: "/" },
   { label: "Ballet",     href: "/ballet" },
   { label: "Hip-Hop & Jazz", href: "/hiphop-jazz" },
-  { label: "Others",     href: "/others" },
+  { label: "Pilates y mas",     href: "/others" },
   { label: "About Us",   href: "/about-us" },
   { label: "Recital",    href: "/recital" },
 ];

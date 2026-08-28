@@ -49,7 +49,7 @@ export default function InclineDiv({
       ].filter(Boolean).join(" ")}
       {...props}
     >
-        <h1 className="w-full text-center md:text-start md:max-w-7xl text-shadow-2xs [word-spacing:0.5rem]">
+        <h1 className="w-full text-6xl text-center md:text-start md:max-w-7xl text-shadow-2xs [word-spacing:0.5rem]">
             {children}
         </h1>
     </div>

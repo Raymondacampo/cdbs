@@ -36,11 +36,11 @@ const Mvv = ({ title, content }: AbtInfoProps) => {
 export default function AboutUsPage() {
   return (
     <div className="flex flex-col items-center bg-pink font-display">
-      <div className="flex w-full justify-center bg-dark text-white py-12 text-center px-4">
+      <div className="flex w-full justify-center bg-dark text-white py-6 md:py-12 text-center px-4">
         <H1>Sobre Nosotros</H1>
       </div>
 
-      <section className="flex flex-wrap items-center w-full justify-center px-4 max-w-9xl py-16 mx-auto">
+      <section className="flex flex-wrap items-center w-full justify-center px-4 max-w-9xl py-12 md:py-16 mx-auto">
         <Image
           src={ballprueba}
           alt="Sobre Nosotros"
@@ -65,7 +65,7 @@ export default function AboutUsPage() {
         />
       </section>
 
-      <section className="flex flex-wrap items-center w-full justify-center py-16 px-4 max-w-9xl mx-auto">
+      <section className="flex flex-wrap items-center w-full justify-center py-12 md:py-16 px-4 max-w-9xl mx-auto">
         <Image
           src={belkis}
           alt="Sobre Nosotros"
@@ -86,7 +86,7 @@ export default function AboutUsPage() {
         />
       </section>
 
-      <section className="grid grid-cols-1 md:grid-cols-3 gap-6 w-full py-16 px-4 max-w-7xl mx-auto">
+      <section className="grid grid-cols-1 md:grid-cols-3 gap-6 w-full py-12 md:py-16 px-4 max-w-7xl mx-auto">
         <Mvv
           title="Nuestra Misión"
           content={<p className="text-base md:text-xl">Nuestra misión es inspirar y nutrir a la próxima generación de bailarines a través de una instrucción de alta calidad y una comunidad de apoyo.</p>}

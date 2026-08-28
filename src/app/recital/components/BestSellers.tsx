@@ -41,7 +41,7 @@ export default function BestSellers() {
   }, [products]);
 
   return (
-    <div className="grid grid-cols-2  w-full max-w-[90dvw] mx-auto justify-items-center pb-8 gap-x-4
+    <div className="grid grid-cols-2  w-full max-w-[90dvw] mx-auto justify-items-center py-8 gap-4 gap-y-8
     md:grid-cols-4 md:gap-x-12 md:pb-12
     lg:max-w-[70dvw] lg:pt-4 lg:pb-16
     xl:max-w-[60dvw]">
