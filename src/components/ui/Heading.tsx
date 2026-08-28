@@ -6,11 +6,11 @@ interface HeadingProps {
 }
 
 export function H1({ children, className = "" }: HeadingProps) {
-  return <h1 className={`h1 ${className}`}>{children}</h1>;
+  return <h1 className={`text-3xl md:text-4xl lg:text-5xl font-bold ${className}`}>{children}</h1>;
 }
 
 export function H2({ children, className = "" }: HeadingProps) {
-  return <h2 className={`h2 ${className}`}>{children}</h2>;
+  return <h2 className={`text-2xl ${className}`}>{children}</h2>;
 }
 
 export function H3({ children, className = "" }: HeadingProps) {
@@ -23,4 +23,8 @@ export function H4({ children, className = "" }: HeadingProps) {
 
 export function H5({ children, className = "" }: HeadingProps) {
   return <h5 className={`h5 ${className}`}>{children}</h5>;
+}
+
+export function P({ children, className = "" }: HeadingProps) {
+  return <p className={`text-xs md:text-lg ${className}`}>{children}</p>;
 }

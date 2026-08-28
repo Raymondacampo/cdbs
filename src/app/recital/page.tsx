@@ -1,6 +1,16 @@
 import { H1, H2 } from "@/components/ui/Heading";
 import Link from "next/link";
-
+import Image from "next/image";
+import hero from "../../../public/images/recital/hero.png";
+import hero2 from "../../../public/images/recital/hero2.png";
+import hero3 from "../../../public/images/recital/hero3.png";
+import BestSellers from "./components/BestSellers";
+import sanshamob from "../../../public/images/recital/sanshamob.png";
+import sanshatab from "../../../public/images/recital/sanshatab.png";
+import gaynor from "../../../public/images/recital/gaynor.png";
+import Button from "@/components/ui/Button";
+import Clothing from "./components/Clothing";
+import tienda1 from "../../../public/images/recital/tienda1.jpeg";
 export const metadata = { title: "Recital Store — CDBS" };
 
 const sections = [
@@ -12,28 +22,129 @@ const sections = [
 
 export default function RecitalPage() {
   return (
-    <div>
-      <div className="bg-[#E996B4] py-20 text-center text-white">
-        {/* TODO: add hero image from public/images/recital/ */}
-        <H1 className="text-white">Recital Store</H1>
-        <p className="mt-2 text-white/80">Everything you need for performance day.</p>
+    <div className="flex flex-col items-center w-full">
+      { /* Hero section mobile */ }
+      <div className="bg-white md:hidden text-center text-white">
+        <Image
+          src={hero}
+          alt="Recital Store Hero"
+          className="mx-auto w-dvw"
+        />
       </div>
 
-      <section className="py-16 px-4 max-w-7xl mx-auto">
-        <H2 className="mb-8 text-center">Shop by Category</H2>
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
-          {sections.map(({ slug, label }) => (
-            <Link
-              key={slug}
-              href={`/recital/${slug}`}
-              className="rounded-xl bg-[#F5E1DB] p-8 text-center shadow-sm hover:shadow-md hover:bg-[#F2C9D8] transition-all"
-            >
-              {/* TODO: add category image from public/images/recital/ */}
-              <h3 className="h3">{label}</h3>
-            </Link>
-          ))}
+      { /* Hero section mobile */ }
+      <div className="bg-white hidden md:block lg:hidden text-center text-white">
+        <Image
+          src={hero2}
+          alt="Recital Store Hero"
+          className="mx-auto w-dvw"
+        />
+      </div>
+
+      { /* Hero section desktop */ }
+      <div className="bg-white hidden lg:block text-center text-white">
+        <Image
+          src={hero3}
+          alt="Recital Store Hero"
+          className="mx-auto w-dvw"
+        />
+      </div>
+
+      { /* Best sellers section */ }
+      <section className="flex flex-col items-center w-full">
+        <H2 className="md:mb-8 text-3xl w-full md:text-5xl font-bold bg-dark py-4 md:py-8 text-white text-center">LOS MAS VENDIDOS</H2>
+        <BestSellers />
+      </section>
+      
+
+      { /* SANSHA section */ }
+      <section className="hidden flex-col relative h-[55dvh] mb-12
+       md:h-[40dvh] lg:h-[65dvh]">
+        <H2 className="text-3xl relative z-20 md:text-5xl font-bold bg-dark py-4 md:py-8 text-white text-center">COLECCION SANSHA</H2>
+        {/* Botón Grande (Pantallas sm en adelante) */}
+        <Link 
+          href="/recital/sansha" 
+          className="relative hidden! sm:inline-flex! z-20 top-0 md:top-4 lg:top-0 my-auto mx-auto"
+        >
+          <Button size="lg" className="hover:cursor-pointer">
+            Ver coleccion
+          </Button>
+        </Link>
+
+        {/* Botón Mediano (Solo móviles) */}
+        <Link 
+          href="/recital/sansha" 
+          className="relative inline-flex! sm:hidden! z-20 top-0 md:top-4 lg:top-0 my-auto mx-auto "
+        >
+          <Button size="md" className="hover:cursor-pointer">
+            Ver coleccion
+          </Button>
+        </Link>
+        <Image
+          src={sanshamob}
+          alt="Coleccion Sansha"
+          className="mx-auto md:hidden! w-dvw absolute z-10 mt-12"
+        />
+        <Image
+          src={sanshatab}
+          alt="Coleccion Sansha"
+          className="mx-auto hidden w-dvw absolute z-10 mt-20 left-1/2 -translate-x-1/2
+          md:block
+          lg:w-[48dvw]"
+        />
+      </section>
+
+      { /* GAYNOR section */ }
+      <section className=" hidden flex-col relative h-[40dvh] mb-12
+       md:h-[35dvh] lg:h-[65dvh]">
+        <H2 className="text-3xl relative z-20 md:text-5xl font-bold bg-dark py-4 md:py-8 text-white text-center">COLECCION GAYNOR</H2>
+        <Link 
+          href="/recital/gaynor" 
+          className="relative hidden! sm:inline-flex! z-20 md:top-16 lg:top-6 my-auto mx-auto"
+        >
+          <Button size="lg" className="hover:cursor-pointer">
+            Ver coleccion
+          </Button>
+        </Link>
+
+        {/* Botón Mediano */}
+        <Link 
+          href="/recital/gaynor" 
+          className="relative inline-flex! sm:hidden! z-20 top-4 md:top-28 lg:top-16 my-auto mx-auto"
+        >
+          <Button size="md" className="hover:cursor-pointer">
+            Ver coleccion
+          </Button>
+        </Link>
+        <Image
+          src={gaynor}
+          alt="Coleccion Gaynor"
+          className="mx-auto w-[150dvw] absolute z-10 mt-16 left-1/2 -translate-x-1/2
+          md:mt-28
+          lg:w-[50dvw]"
+        />
+      </section>
+
+      { /* Clothing section */ }
+      <section className="flex flex-col w-full items-center mb-12 mt-16">
+        <H2 className="text-3xl w-full relative z-20 md:text-5xl font-bold py-4 md:py-8 text-dark text-center mb-12">TODA LA COLECCION</H2>
+        <Clothing />
+      </section>
+
+      <section className="flex flex-wrap sm:gap-4 mx-auto items-center justify-center mb-12 mt-16">
+        <Image
+          src={tienda1}
+          alt="Tienda"
+          className="w-[90dvw] md:w-[70dvw] lg:w-[35dvw] rounded-md"
+        />
+        <div className="flex flex-col gap-2 max-w-[90dvw] md:max-w-sm">
+          <h2 className="text-3xl font-bold text-start mt-4">Nuestra Tienda</h2>
+          <p className="text-start mt-2 text-sm sm:text-base">Visita nuestra tienda para descubrir la colección completa y encontrar los productos que mejor se adapten a tu estilo y necesidades.</p>
         </div>
       </section>
+      
+      <section className="flex flex-col">
+      </section>      
     </div>
   );
 }

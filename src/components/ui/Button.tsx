@@ -35,7 +35,7 @@ export default function Button({
   return (
     <button
       className={[
-        "inline-flex items-center justify-center font-semibold rounded-md transition-colors duration-200 focus:outline-none focus-visible:ring-2 focus-visible:ring-[#E996B4] focus-visible:ring-offset-2 disabled:opacity-50 disabled:cursor-not-allowed",
+        "inline-flex hover:cursor-pointer items-center justify-center font-semibold rounded-md transition-colors duration-200 focus:outline-none focus-visible:ring-2 focus-visible:ring-pink focus-visible:ring-offset-2 disabled:opacity-50 disabled:cursor-not-allowed",
         variantClasses[variant],
         sizeClasses[size],
         fullWidth ? "w-full" : "",

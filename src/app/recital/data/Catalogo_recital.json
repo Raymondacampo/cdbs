@@ -1,0 +1,406 @@
+[
+  {
+    "id": "3AC",
+    "name": "ZAPATILLAS EN TELAS",
+    "category": "CALZADO",
+    "colors": ["NEGRO", "BLANCO"],
+    "brand": "SANSHA",
+    "price": "1000",
+    "imageSrc": ["/images/recital/products/3AC_BLANCO.png", "/images/recital/products/3AC_NEGRO.jpeg"],
+    "description": "Zapatillas de ballet en tela, cómodas y perfectas para ensayos y actuaciones."
+  },
+  {
+    "id": "3LCOTAIL",
+    "name": "ZAPATILLAS DE SALTO EN PIEL CON DIVISION",
+    "category": "CALZADO",
+    "colors": ["PIEL"],
+    "brand": "SANSHA",
+    "price": "1300",
+    "imageSrc": ["/images/recital/products/3LCOTAIL.png"],
+    "description": "Zapatillas de ballet en piel con suela dividida para mayor flexibilidad."
+  },
+  {
+    "id": "14LCOBRA",
+    "name": "ZAPATILLAS DE SALTO EN PIEL SUELA CORRIDA",
+    "category": "CALZADO",
+    "colors": ["PIEL"],
+    "brand": "SANSHA",
+    "price": "1175",
+    "imageSrc": ["/images/recital/products/14LCOBRA.png"],
+    "description": "Zapatillas de ballet en piel con suela corrida para soporte y durabilidad."
+  },
+  {
+    "id": "PROC-1",
+    "name": "ZAPATILLAS EN TELAS COLOR PIEL",
+    "category": "CALZADO",
+    "colors": ["PIEL"],
+    "brand": "SANSHA",
+    "price": "1200",
+    "imageSrc": ["/images/recital/products/PROC-1.png"],
+    "description": "Zapatillas de ballet en tela color piel para un look uniforme."
+  },
+  {
+    "id": "331E",
+    "name": "ZAPATILLAS DE BALLET EN TELAS",
+    "category": "CALZADO",
+    "colors": ["PIEL"],
+    "brand": "SANSHA",
+    "price": "1200",
+    "imageSrc": ["/images/recital/products/331E.png"],
+    "description": "Zapatillas clásicas de ballet en tela para bailarines de todos los niveles."
+  },
+  {
+    "id": "FDR-DUVAL 3.0",
+    "name": "ZAPATILLAS DE PUNTAS DUVAL REG/STR/XTR/FLX",
+    "category": "CALZADO",
+    "colors": ["BEIGE"],
+    "brand": "SANSHA",
+    "price": "4300",
+    "imageSrc": ["/images/recital/products/FDR-DUVAL30.png"],
+    "description": "Zapatillas de puntas Duval avanzadas con opciones de ajuste personalizables."
+  },
+  {
+    "id": "FDR-DUVAL 4.0",
+    "name": "ZAPATILLAS DE PUNTAS DUVAL REG/STR/XTR/FLX",
+    "category": "CALZADO",
+    "colors": ["BEIGE"],
+    "brand": "SANSHA",
+    "price": "4300",
+    "imageSrc": ["/images/recital/products/FDR-DUVAL40.png"],
+    "description": "Zapatillas de puntas Duval premium para bailarines profesionales."
+  },
+  {
+    "id": "GAYNOR",
+    "name": "ZAPATILLAS DE PUNTAS GAYNOR MINDEN",
+    "category": "CALZADO",
+    "colors": ["BEIGE"],
+    "brand": "gaynor minden",
+    "price": "10500",
+    "imageSrc": ["/images/recital/products/GAYNOR.png"],
+    "description": "Zapatillas de puntas Gaynor Minden de alta calidad para máxima durabilidad."
+  },
+  {
+    "id": "BR3103",
+    "name": "ZAPATOS DE BALLROOM DANCE",
+    "category": "CALZADO",
+    "colors": ["BRONCE"],
+    "brand": "SANSHA",
+    "price": "3300",
+    "imageSrc": ["/images/recital/products/BR3103.png", "/images/recital/products/BR3103_2.png"],
+    "description": "Zapatos de salón en bronce, ideales para bailes competitivos."
+  },
+  {
+    "id": "CL53",
+    "name": "ZAPATOS DE CARÁCTER",
+    "category": "CALZADO",
+    "colors": ["NEGRO", "BEIGE"],
+    "brand": "SANSHA",
+    "price": "3800",
+    "imageSrc": ["/images/recital/products/CL53.png"],
+    "description": "Zapatos de carácter perfectos para actuaciones teatrales de danza."
+  },
+  {
+    "id": "JS811",
+    "name": "ZAPATOS STREET JAZZ EN PIEL",
+    "category": "CALZADO",
+    "colors": ["NEGRO", "BEIGE"],
+    "brand": "SANSHA",
+    "price": "2400",
+    "imageSrc": ["/images/recital/products/JS811.png"],
+    "description": "Zapatos de jazz en piel para bailarines profesionales."
+  },
+  {
+    "id": "G206",
+    "name": "LEOTARDOS MANAO EN MICROFIBRA NIÑAS",
+    "category": "PANTALONES",
+    "colors": ["ROSADO", "NEGRO"],
+    "brand": "SANSHA",
+    "price": "1100",
+    "imageSrc": ["/images/recital/products/G206.png"],
+    "description": "Leotardos de microfibra para niñas, ideales para clases de ballet."
+  },
+  {
+    "id": "G255M",
+    "name": "LEOTARDOS MAGGY EN MICROFIBRAS / M CORTAS",
+    "category": "PANTALONES",
+    "colors": ["ROSADO"],
+    "brand": "SANSHA",
+    "price": "1200",
+    "imageSrc": ["/images/recital/products/G255M.png"],
+    "description": "Leotardos de microfibra de manga corta para comodidad y estilo."
+  },
+  {
+    "id": "Y3556",
+    "name": "LEOTRDOS SHAYLEE",
+    "category": "PANTALONES",
+    "colors": ["ROSADO"],
+    "brand": "SANSHA",
+    "price": "1200",
+    "imageSrc": ["/images/recital/products/Y3556.png"],
+    "description": "Leotardos Shaylee para prácticas de ballet elegantes."
+  },
+  {
+    "id": "C130C",
+    "name": "LEOTARDOS TRADITION ALGODÓN",
+    "category": "PANTALONES",
+    "colors": ["NEGRO"],
+    "brand": "SANSHA",
+    "price": "1200",
+    "imageSrc": ["/images/recital/products/C130C.png"],
+    "description": "Leotardos de algodón clásicos para danza tradicional."
+  },
+  {
+    "id": "C157C",
+    "name": "LEOTARDOS ANASTASIA ALGODÓN/MANGAS",
+    "category": "PANTALONES",
+    "colors": ["ROSADO", "NEGRO"],
+    "brand": "SANSHA",
+    "price": "1300",
+    "imageSrc": ["/images/recital/products/C157C.png"],
+    "description": "Leotardos de algodón con mangas para mayor cobertura."
+  },
+  {
+    "id": "D1511",
+    "name": "LEOTARDOS BALLINA ALGODÓN ADULTOS",
+    "category": "PANTALONES",
+    "colors": ["NEGRO"],
+    "brand": "SANSHA",
+    "price": "1400",
+    "imageSrc": ["/images/recital/products/D1511.png"],
+    "description": "Leotardos de algodón para adultos, cómodos y ajustados."
+  },
+  {
+    "id": "KH2554",
+    "name": "LEOTARDO KIRSKA",
+    "category": "PANTALONES",
+    "colors": ["NEGRO"],
+    "brand": "SANSHA",
+    "price": "1600",
+    "imageSrc": ["/images/recital/products/KH2554.png"],
+    "description": "Leotardo Kirska para un look elegante y profesional."
+  },
+  {
+    "id": "KH1547",
+    "name": "LEOTRDOS MALINA ROJOS",
+    "category": "PANTALONES",
+    "colors": ["ROJO"],
+    "brand": "SANSHA",
+    "price": "1600",
+    "imageSrc": ["/images/recital/products/KH1547.png"],
+    "description": "Leotardos Malina rojos para actuaciones destacadas."
+  },
+
+  {
+    "id": "T88",
+    "name": "MEDIAS CONVERTIBLES TALLA UNICA",
+    "category": "PANTALONES",
+    "colors": ["ROSADO"],
+    "brand": "SANSHA",
+    "price": "850",
+    "imageSrc": ["/images/recital/products/T88.png"],
+    "description": "Medias convertibles de ballet para mayor versatilidad."
+  },
+  {
+    "id": "T99",
+    "name": "MEDIAS SM 1-6 / ML 7-12",
+    "category": "PANTALONES",
+    "colors": ["ROSADO"],
+    "brand": "SANSHA",
+    "price": "700",
+    "imageSrc": ["/images/recital/products/T99.png"],
+    "description": "Medias de ballet en tallas pequeña y mediana-grande."
+  },
+  {
+    "id": "T98",
+    "name": "MEDIAS DE HOYITO",
+    "category": "PANTALONES",
+    "colors": ["NEGRO", "PIEL"],
+    "brand": "SANSHA",
+    "price": "1100",
+    "imageSrc": ["/images/recital/products/T98.png"],
+    "description": "Medias de ballet con talón abierto para flexibilidad."
+  },
+  {
+    "id": "T19",
+    "name": "MEDIAS SANSHA TALLAS UNICAS",
+    "category": "PANTALONES",
+    "colors": ["PIEL"],
+    "brand": "SANSHA",
+    "price": "1100",
+    "imageSrc": ["/images/recital/products/T19.png"],
+    "description": "Medias de ballet color piel de talla única."
+  },
+  {
+    "id": "AT-101",
+    "name": "MEDIAS GAYNOR CONVERTIBLES",
+    "category": "PANTALONES",
+    "colors": ["PIEL", "NEGRO", "ROSADO"],
+    "brand": "gaynor minden",
+    "price": "1300",
+    "imageSrc": ["/images/recital/products/AT-101.png"],
+    "description": "Medias convertibles Gaynor para diversos estilos de danza."
+  },
+  {
+    "id": "D031",
+    "name": "MEDIAS DE BALLET HOMBRES JONATHAN",
+    "category": "PANTALONES",
+    "colors": ["NEGRO", "BLANCO"],
+    "brand": "SANSHA",
+    "price": "2000",
+    "imageSrc": ["/images/recital/products/D031.png"],
+    "description": "Medias de ballet para hombres, cómodas y duraderas."
+  },
+  {
+    "id": "YO710",
+    "name": "FALDAS DE BALLET CAMILLE",
+    "category": "PANTALONES",
+    "colors": ["ROSADO"],
+    "brand": "SANSHA",
+    "price": "700",
+    "imageSrc": ["/images/recital/products/Y0710.png"],
+    "description": "Falda de ballet rosada para actuaciones elegantes."
+  },
+ 
+  {
+    "id": "D066",
+    "name": "SHORT INDIANAPOLIS",
+    "category": "PANTALONES",
+    "colors": ["NEGRO"],
+    "brand": "SANSHA",
+    "price": "800",
+    "imageSrc": ["/images/recital/products/D066.png"],
+    "description": "Shorts de danza negros para flexibilidad y comodidad."
+  },
+  {
+    "id": "TF1810",
+    "name": "TUTU ROMANTICO TISHA",
+    "category": "PANTALONES",
+    "colors": ["BLANCO Y ROSADO"],
+    "brand": "SANSHA",
+    "price": "2500",
+    "imageSrc": ["/images/recital/products/TF1810.png"],
+    "description": "Tutu romántico blanco y rosado para actuaciones de ballet."
+  },
+    {
+    "id": "TF014",
+    "name": "TUTU BLANCO DE PLATOS SYLVIA",
+    "category": "PANTALONES",
+    "colors": ["BLANCO"],
+    "brand": "SANSHA",
+    "price": "3800",
+    "imageSrc": ["/images/recital/products/TF014.png"],
+    "description": "Tutu blanco de platos clásico para ballet profesional."
+  },
+  {
+    "id": "KT003",
+    "name": "CALENTADORES DE PIERNAS",
+    "category": "ACCESORIOS",
+    "colors": ["ROSADO", "NEGRO"],
+    "brand": "SANSHA",
+    "price": "700",
+    "imageSrc": ["/images/recital/products/KT003.png"],
+    "description": "Calentadores de piernas para mantener los músculos calientes."
+  },
+
+  {
+    "id": "CG-PAD",
+    "name": "PLUMILLAS DE TELA Y SILICOM",
+    "category": "ACCESORIOS",
+    "colors": ["PIEL"],
+    "brand": "SANSHA",
+    "price": "1100",
+    "imageSrc": ["/images/recital/products/CG-PAD.png"],
+    "description": "Protectores de tela y silicona para zapatillas de punta."
+  },
+  {
+    "id": "BBH",
+    "name": "REDECILLA SANSHA",
+    "category": "ACCESORIOS",
+    "colors": ["NEGRO", "ROSADO"],
+    "brand": "SANSHA",
+    "price": "100",
+    "imageSrc": ["/images/recital/products/BBH.png"],
+    "description": "Redecillas para asegurar el moño durante la danza."
+  },
+  {
+    "id": "L0156",
+    "name": "LEGGINS JOCELYN ALGODÓN Y LICRA",
+    "category": "PANTALONES",
+    "colors": ["NEGRO"],
+    "brand": "SANSHA",
+    "price": "1000",
+    "imageSrc": ["/images/recital/products/L0156.png"],
+    "description": "Leggins Jocelyn de algodón y licra para prácticas de danza."
+  },
+  {
+    "id": "D052C",
+    "name": "SUSPENSORIOS",
+    "category": "ACCESORIOS",
+    "colors": ["NEGRO", "PIEL"],
+    "brand": "SANSHA",
+    "price": "1000",
+    "imageSrc": ["/images/recital/products/D052C.png"],
+    "description": "Suspensorios para bailarines hombres, ofreciendo soporte."
+  },
+  {
+    "id": "BAG2",
+    "name": "BULTO DE BALLET",
+    "category": "ACCESORIOS",
+    "colors": ["ROSADO ", "NEGRO"],
+    "brand": "SANSHA",
+    "price": "1400",
+    "imageSrc": ["/images/recital/products/BAG2.png"],
+    "description": "Bolso espacioso para llevar esenciales de ballet."
+  },
+  {
+    "id": "SBAG07",
+    "name": "PORTA TUTUS",
+    "category": "ACCESORIOS",
+    "colors": ["NEGRO"],
+    "brand": "SANSHA",
+    "price": "1900",
+    "imageSrc": ["/images/recital/products/SBAG07.png"],
+    "description": "Bolso especializado para transportar tutús de forma segura."
+  },
+  {
+    "id": "STRB",
+    "name": "BANDAS ELASTICAS SANSHA",
+    "category": "ACCESORIOS",
+    "colors": ["ROSADO", "VERDE"],
+    "brand": "SANSHA",
+    "price": "800",
+    "imageSrc": ["/images/recital/products/STRB.png"],
+    "description": "Bandas elásticas Sansha para ejercicios de estiramiento."
+  },
+  {
+    "id": "KNEEPAD",
+    "name": "RODILLERAS SANSHA",
+    "category": "ACCESORIOS",
+    "colors": ["NEGRO", "BEIGE"],
+    "brand": "SANSHA",
+    "price": "700",
+    "imageSrc": ["/images/recital/products/KNEEPAD.png"],
+    "description": "Rodilleras para protección adicional durante la danza."
+  },
+
+  {
+    "id": "PERRUBIA",
+    "name": "PERRUBIA 1 LIBRA",
+    "category": "ACCESORIOS",
+    "colors": ["null"],
+    "brand": "SANSHA",
+    "price": "1000",
+    "imageSrc": ["/images/recital/products/PERRUBIA.png"],
+    "description": "Resina de 1 libra para mejorar el agarre de las zapatillas."
+  },
+  {
+    "id": "B52",
+    "name": "TENIS BOTAS EN PIEL",
+    "category": "CALZADO",
+    "colors": ["NEGRO"],
+    "brand": "SANSHA",
+    "price": "3000",
+    "imageSrc": ["/images/recital/products/B52.png"],
+    "description": "Botas de danza en piel con soporte adicional para el tobillo."
+  }
+]

@@ -1,0 +1,62 @@
+
+    {
+    "id": "G237S/B",
+    "name": "LEOTARDO MANAKARA",
+    "category": "LYM",
+    "colors": ["NEGRO"],
+    "brand": "SANSHA",
+    "price": "1300",
+    "imageSrc": ["/images/recital/products/G237S-B.png"],
+    "description": "Leotardo Manakara para un ajuste cómodo y elegante."
+  },
+    {
+    "id": "T99/T69",
+    "name": "MEDIAS TALLAS UNICAS",
+    "category": "LYM",
+    "colors": ["ROSADO"],
+    "brand": "SANSHA",
+    "price": "750",
+    "imageSrc": ["/images/recital/products/T99-T69.png"],
+    "description": "Medias de ballet de talla única para un ajuste perfecto."
+  },
+
+   {
+    "id": "L0715",
+    "name": "FALDAS SANSHA SKYE",
+    "category": "PANTALONES",
+    "colors": ["NEGRO"],
+    "brand": "SANSHA",
+    "price": "800",
+    "imageSrc": ["/images/recital/products/L0715.png"],
+    "description": "Falda de ballet Skye negra para un look clásico."
+  },
+    {
+    "id": "TF014",
+    "name": "TUTU BLANCO DE PLATOS SYLVIA",
+    "category": "PANTALONES",
+    "colors": ["BLANCO"],
+    "brand": "SANSHA",
+    "price": "3800",
+    "imageSrc": ["/images/recital/products/TF014.png"],
+    "description": "Tutu blanco de platos clásico para ballet profesional."
+  },
+    {
+    "id": "CBPAD",
+    "name": "PLUMILLAS DE SILICOM",
+    "category": "ACCESORIOS",
+    "colors": ["ROSADO"],
+    "brand": "SANSHA",
+    "price": "800",
+    "imageSrc": ["/images/recital/products/CBPAD.png"],
+    "description": "Protectores de silicona para mayor comodidad en zapatillas de punta."
+  },
+    {
+    "id": "SSR",
+    "name": "CINTAS SANSHSA SEDA",
+    "category": "ACCESORIOS",
+    "colors": ["ROSADO"],
+    "brand": "SANSHA",
+    "price": "350",
+    "imageSrc": ["/images/recital/products/SSR.png"],
+    "description": "Cintas de seda Sansha para asegurar zapatillas de punta."
+  },
