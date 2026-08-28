@@ -126,7 +126,7 @@ export default function RecitalPage() {
       </section>
 
       { /* Clothing section */ }
-      <section className="flex flex-col w-full items-center mb-12 mt-16">
+      <section className="flex flex-col w-full items-center mb-12 mt-16 px-4">
         <H2 className="text-3xl w-full relative z-20 md:text-5xl font-bold py-4 md:py-8 text-dark text-center mb-12">TODA LA COLECCION</H2>
         <Clothing />
       </section>
@@ -138,8 +138,8 @@ export default function RecitalPage() {
           className="w-[90dvw] md:w-[70dvw] lg:w-[35dvw] rounded-md"
         />
         <div className="flex flex-col gap-2 max-w-[90dvw] md:max-w-sm">
-          <h2 className="text-3xl font-bold text-start mt-4">Nuestra Tienda</h2>
-          <p className="text-start mt-2 text-sm sm:text-base">Visita nuestra tienda para descubrir la colección completa y encontrar los productos que mejor se adapten a tu estilo y necesidades.</p>
+          <h2 className="text-3xl font-bold text-center md:text-start mt-4">Nuestra Tienda</h2>
+          <p className="text-center md:text-start mt-2 text-sm sm:text-base">Visita nuestra tienda para descubrir la colección completa y encontrar los productos que mejor se adapten a tu estilo y necesidades.</p>
         </div>
       </section>
       

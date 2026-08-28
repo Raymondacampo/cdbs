@@ -52,7 +52,7 @@ export default function OthersPage() {
                           </div>                    
                       </div>                    
                   </div> 
-                  <p className={`text-center order-1 lg:order-2 text-xs md:text-base mt-4 lg:mt-8`}>Una fusión de danza y Pilates que mejora fuerza, flexibilidad
+                  <p className={`text-center order-1 lg:order-2 text-xs md:text-base mt-4 px-4 font-display lg:mt-8`}>Una fusión de danza y Pilates que mejora fuerza, flexibilidad
                     y control corporal a través de ejercicios fluidos y precisos, ideales para tonificar y conectar cuerpo y mente.
                   </p>        
                   <Button size="lg" className="w-36 h-12 mt-4 lg:mt-8 ">
@@ -63,7 +63,7 @@ export default function OthersPage() {
       </div>
 
       {/* { ACONDICIONAMIENTO FISICO SECTION } */}
-        <div className={"w-full flex items-center flex-col min-h-[80dvh]  md:min-h-[50dvh] lg:min-h-[75dvh] relative left-0 text-shadow-2xs [word-spacing:0.5rem] "}>
+        <div className={"w-full flex items-center flex-col min-h-[70dvh]  md:min-h-[50dvh] lg:min-h-[75dvh] relative left-0 text-shadow-2xs [word-spacing:0.5rem] "}>
           <div className={`bg-pink shadow-lg w-full py-6 flex md:justify-center mb-4`}>
               <h1 className={`font-bold text-white text-2xl md:text-5xl lg:text-7xl w-full md:w-auto text-center  text-shadow-2xs [word-spacing:0.1rem]`}>
                 ACONDICIONAMIENTO FISICO Y TECNICA DE JAZZ          
@@ -93,7 +93,7 @@ export default function OthersPage() {
                           </div>                    
                       </div>                    
                   </div> 
-                  <p className={`text-center text-xs md:text-base mt-4`}>Clase de jazz que combina técnica clásica y movimientos 
+                  <p className={`text-center text-xs md:text-base font-display px-4 mt-4`}>Clase de jazz que combina técnica clásica y movimientos 
                     modernos, desarrollando flexibilidad, fuerza y precisión mediante coreografías elegantes y llenas de estilo.
 
                   </p>        
