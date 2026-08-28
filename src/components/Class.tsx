@@ -2,8 +2,8 @@ import React from "react";
 import Image from "next/image";
 import type { StaticImageData } from "next/image";
 import Button from "@/components/ui/Button";
-import { Cake } from 'lucide-react';
-import { Calendar, Clock } from "lucide-react";
+import Link from "next/link";
+import { Cake, Calendar, Clock } from 'lucide-react';
 
 type Variant = "right" | "left" | 'straight';
 type Order = "first" | "second";
@@ -106,10 +106,12 @@ export default function Class({
                     <Cake className="w-5 h-5" />
                     <p className={`text-xs md:text-xl ${bannercolor === 'bg-peach' ? 'text-shadow:1.5px_1.5px_1px_rgba(0,0,0,0.5)' : ''} max-w-xl font-bold [word-spacing:2px]`}>{age.age}</p>
                 </div>
+                <Link href={`/inscripcion?disciplina=${children}`}>
+                    <Button size="md" className="w-32! h-10 mt-4">
+                        Inscribirme!
+                    </Button>  
+                </Link>
 
-                <Button size="md" className="w-32! h-10 mt-4">
-                    Inscribirme!
-                </Button>  
                 <p className={`text-center text-sm md:text-base mt-4 font-display ${bannercolor === 'bg-peach' ? 'text-shadow:1.5px_1.5px_1px_rgba(0,0,0,0.4)' : ''}`}>{description}</p>              
             </div>
 
