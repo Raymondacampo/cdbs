@@ -7,11 +7,11 @@ import Link from "next/link";
 
 const ClothingCard = ({ title, src }: { title: string; src: StaticImageData }) => {
   return (
-    <div className="flex flex-col items-center mb-4">
+    <div className="flex flex-col items-center mb-4 ">
         <Image
           src={src}
           alt={title}
-          className="mx-auto w-full drop-shadow-[2px_2px_1px_rgba(0,0,0,0.15)] hover:drop-shadow-[4px_4px_4px_rgba(0,0,0,0.4)]"
+          className="mx-auto w-full drop-shadow-[2px_2px_1px_rgba(0,0,0,0.15)] rounded-md hover:drop-shadow-[4px_4px_4px_rgba(0,0,0,0.4)]"
         />
       <p className="text-sm sm:text-lg font-bold text-center mt-2">{title}</p>
     </div>
@@ -28,7 +28,7 @@ export default function Clothing() {
   return (
       <div className="grid grid-cols-3 gap-0.5 flex-wrap 
       sm:max-w-[90dvw] sm:gap-4
-      lg:max-w-[35dvw] lg:gap-12">
+      lg:max-w-[70dvw] lg:gap-4">
         {clothingItems.map((item) => (
           <Link href={`/recital/${item.srcSet}`} key={item.title} className="flex flex-col items-center">
             <ClothingCard title={item.title} src={item.src} />

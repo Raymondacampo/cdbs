@@ -18,7 +18,7 @@ export default function HiphopJazzPage() {
         bannercolor="bg-pink"
         bg="bg-peach"
         dayTime={{ dayTimes: [
-          { day: "Lunes y Miercoles", time: "4:30pm a 5:30pm" },
+          { day: "Lunes y Miercoles", time: "4:30pm - 5:30pm" },
         ] }}
         age={{ age: "12 en adelante", icon: <span>👶</span> }}
         order="first"
@@ -38,7 +38,7 @@ export default function HiphopJazzPage() {
         bannercolor="bg-pink"
         bg="bg-peach"
         dayTime={{ dayTimes: [
-          { day: "Sábado", time: "10:30am a 12:00pm" },
+          { day: "Sábado", time: "10:30am - 12:00pm" },
         ] }}
         age={{ age: "12 en adelante", icon: <span>👶</span> }}
         order="second"
@@ -57,7 +57,7 @@ export default function HiphopJazzPage() {
         bannercolor="bg-pink"
         bg="bg-peach"
         dayTime={{ dayTimes: [
-          { day: "Martes y Jueves ", time: "4:30pm a 5:30pm" },
+          { day: "Martes y Jueves ", time: "4:30pm - 5:30pm" },
         ] }}
         age={{ age: "8-11 anos", icon: <span>👶</span> }}
         order="first"
@@ -77,7 +77,7 @@ export default function HiphopJazzPage() {
         bannercolor="bg-pink"
         bg="bg-peach"
         dayTime={{ dayTimes: [
-          { day: "Martes y Jueves", time: "5:30pm a 6:30pm" },
+          { day: "Martes y Jueves", time: "5:30pm - 6:30pm" },
         ] }}
         age={{ age: "12-17 anos", icon: <span>👶</span> }}
         order="second"

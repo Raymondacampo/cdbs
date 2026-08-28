@@ -10,6 +10,7 @@ import sanshatab from "../../../public/images/recital/sanshatab.png";
 import gaynor from "../../../public/images/recital/gaynor.png";
 import Button from "@/components/ui/Button";
 import Clothing from "./components/Clothing";
+import tienda1 from "../../../public/images/recital/tienda1.jpeg";
 export const metadata = { title: "Recital Store — CDBS" };
 
 const sections = [
@@ -21,7 +22,7 @@ const sections = [
 
 export default function RecitalPage() {
   return (
-    <div>
+    <div className="flex flex-col items-center w-full">
       { /* Hero section mobile */ }
       <div className="bg-white md:hidden text-center text-white">
         <Image
@@ -125,11 +126,22 @@ export default function RecitalPage() {
       </section>
 
       { /* Clothing section */ }
-      <section className="flex flex-col w-full items-center mb-12 mt-32">
-        <H2 className="text-3xl w-full relative z-20 md:text-5xl font-bold bg-dark py-4 md:py-8 text-white text-center mb-12">TODA LA COLECCION</H2>
+      <section className="flex flex-col w-full items-center mb-12 mt-16">
+        <H2 className="text-3xl w-full relative z-20 md:text-5xl font-bold py-4 md:py-8 text-dark text-center mb-12">TODA LA COLECCION</H2>
         <Clothing />
       </section>
 
+      <section className="flex flex-wrap sm:gap-4 mx-auto items-center justify-center mb-12 mt-16">
+        <Image
+          src={tienda1}
+          alt="Tienda"
+          className="w-[90dvw] md:w-[70dvw] lg:w-[35dvw] rounded-md"
+        />
+        <div className="flex flex-col gap-2 max-w-[90dvw] md:max-w-sm">
+          <h2 className="text-3xl font-bold text-start mt-4">Nuestra Tienda</h2>
+          <p className="text-start mt-2 text-sm sm:text-base">Visita nuestra tienda para descubrir la colección completa y encontrar los productos que mejor se adapten a tu estilo y necesidades.</p>
+        </div>
+      </section>
       
       <section className="flex flex-col">
       </section>      

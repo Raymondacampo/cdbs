@@ -56,7 +56,7 @@
     "colors": ["BEIGE"],
     "brand": "SANSHA",
     "price": "4300",
-    "imageSrc": ["/images/recital/products/FDR-DUVAL-3.0.png"],
+    "imageSrc": ["/images/recital/products/FDR-DUVAL30.png"],
     "description": "Zapatillas de puntas Duval avanzadas con opciones de ajuste personalizables."
   },
   {
@@ -66,7 +66,7 @@
     "colors": ["BEIGE"],
     "brand": "SANSHA",
     "price": "4300",
-    "imageSrc": ["/images/recital/products/FDR-DUVAL-4.0.png"],
+    "imageSrc": ["/images/recital/products/FDR-DUVAL40.png"],
     "description": "Zapatillas de puntas Duval premium para bailarines profesionales."
   },
   {
@@ -110,19 +110,9 @@
     "description": "Zapatos de jazz en piel para bailarines profesionales."
   },
   {
-    "id": "B62",
-    "name": "TENIS BOTAS EN PIEL",
-    "category": "CALZADO",
-    "colors": ["NEGRO"],
-    "brand": "SANSHA",
-    "price": "3000",
-    "imageSrc": ["/images/recital/products/B62.png"],
-    "description": "Botas de danza en piel con soporte adicional para el tobillo."
-  },
-  {
     "id": "G206",
     "name": "LEOTARDOS MANAO EN MICROFIBRA NIÑAS",
-    "category": "LYM",
+    "category": "PANTALONES",
     "colors": ["ROSADO", "NEGRO"],
     "brand": "SANSHA",
     "price": "1100",
@@ -130,29 +120,19 @@
     "description": "Leotardos de microfibra para niñas, ideales para clases de ballet."
   },
   {
-    "id": "G255C/F",
-    "name": "LEOTARDOS MAGGY ALGODÓN/MARGAS CORTAS",
-    "category": "LYM",
-    "colors": ["ROSADDOS"],
-    "brand": "SANSHA",
-    "price": "1200",
-    "imageSrc": ["/images/recital/products/G255C-F.png"],
-    "description": "Leotardos de algodón de manga corta para jóvenes bailarinas."
-  },
-  {
-    "id": "G255M/F",
+    "id": "G255M",
     "name": "LEOTARDOS MAGGY EN MICROFIBRAS / M CORTAS",
-    "category": "LYM",
+    "category": "PANTALONES",
     "colors": ["ROSADO"],
     "brand": "SANSHA",
     "price": "1200",
-    "imageSrc": ["/images/recital/products/G255M-F.png"],
+    "imageSrc": ["/images/recital/products/G255M.png"],
     "description": "Leotardos de microfibra de manga corta para comodidad y estilo."
   },
   {
     "id": "Y3556",
     "name": "LEOTRDOS SHAYLEE",
-    "category": "LYM",
+    "category": "PANTALONES",
     "colors": ["ROSADO"],
     "brand": "SANSHA",
     "price": "1200",
@@ -160,29 +140,29 @@
     "description": "Leotardos Shaylee para prácticas de ballet elegantes."
   },
   {
-    "id": "C130C-L",
+    "id": "C130C",
     "name": "LEOTARDOS TRADITION ALGODÓN",
-    "category": "LYM",
+    "category": "PANTALONES",
     "colors": ["NEGRO"],
     "brand": "SANSHA",
     "price": "1200",
-    "imageSrc": ["/images/recital/products/C130C-L.png"],
+    "imageSrc": ["/images/recital/products/C130C.png"],
     "description": "Leotardos de algodón clásicos para danza tradicional."
   },
   {
-    "id": "C157C-L",
+    "id": "C157C",
     "name": "LEOTARDOS ANASTASIA ALGODÓN/MANGAS",
-    "category": "LYM",
+    "category": "PANTALONES",
     "colors": ["ROSADO", "NEGRO"],
     "brand": "SANSHA",
     "price": "1300",
-    "imageSrc": ["/images/recital/products/C157C-L.png"],
+    "imageSrc": ["/images/recital/products/C157C.png"],
     "description": "Leotardos de algodón con mangas para mayor cobertura."
   },
   {
     "id": "D1511",
     "name": "LEOTARDOS BALLINA ALGODÓN ADULTOS",
-    "category": "LYM",
+    "category": "PANTALONES",
     "colors": ["NEGRO"],
     "brand": "SANSHA",
     "price": "1400",
@@ -190,19 +170,9 @@
     "description": "Leotardos de algodón para adultos, cómodos y ajustados."
   },
   {
-    "id": "D1512",
-    "name": "LEOTARDOS BELIZE ALGODÓN ADULTOS",
-    "category": "LYM",
-    "colors": ["NEGRO"],
-    "brand": "SANSHA",
-    "price": "1400",
-    "imageSrc": ["/images/recital/products/D1512.png"],
-    "description": "Leotardos Belize de algodón para bailarines adultos."
-  },
-  {
     "id": "KH2554",
     "name": "LEOTARDO KIRSKA",
-    "category": "LYM",
+    "category": "PANTALONES",
     "colors": ["NEGRO"],
     "brand": "SANSHA",
     "price": "1600",
@@ -212,37 +182,18 @@
   {
     "id": "KH1547",
     "name": "LEOTRDOS MALINA ROJOS",
-    "category": "LYM",
+    "category": "PANTALONES",
     "colors": ["ROJO"],
     "brand": "SANSHA",
     "price": "1600",
     "imageSrc": ["/images/recital/products/KH1547.png"],
     "description": "Leotardos Malina rojos para actuaciones destacadas."
   },
-  {
-    "id": "G237S/B",
-    "name": "LEOTARDO MANAKARA",
-    "category": "LYM",
-    "colors": ["NEGRO"],
-    "brand": "SANSHA",
-    "price": "1300",
-    "imageSrc": ["/images/recital/products/G237S-B.png"],
-    "description": "Leotardo Manakara para un ajuste cómodo y elegante."
-  },
-  {
-    "id": "T99/T69",
-    "name": "MEDIAS TALLAS UNICAS",
-    "category": "LYM",
-    "colors": ["ROSADO"],
-    "brand": "SANSHA",
-    "price": "750",
-    "imageSrc": ["/images/recital/products/T99-T69.png"],
-    "description": "Medias de ballet de talla única para un ajuste perfecto."
-  },
+
   {
     "id": "T88",
     "name": "MEDIAS CONVERTIBLES TALLA UNICA",
-    "category": "LYM",
+    "category": "PANTALONES",
     "colors": ["ROSADO"],
     "brand": "SANSHA",
     "price": "850",
@@ -252,7 +203,7 @@
   {
     "id": "T99",
     "name": "MEDIAS SM 1-6 / ML 7-12",
-    "category": "LYM",
+    "category": "PANTALONES",
     "colors": ["ROSADO"],
     "brand": "SANSHA",
     "price": "700",
@@ -262,7 +213,7 @@
   {
     "id": "T98",
     "name": "MEDIAS DE HOYITO",
-    "category": "LYM",
+    "category": "PANTALONES",
     "colors": ["NEGRO", "PIEL"],
     "brand": "SANSHA",
     "price": "1100",
@@ -272,7 +223,7 @@
   {
     "id": "T19",
     "name": "MEDIAS SANSHA TALLAS UNICAS",
-    "category": "LYM",
+    "category": "PANTALONES",
     "colors": ["PIEL"],
     "brand": "SANSHA",
     "price": "1100",
@@ -282,7 +233,7 @@
   {
     "id": "AT-101",
     "name": "MEDIAS GAYNOR CONVERTIBLES",
-    "category": "LYM",
+    "category": "PANTALONES",
     "colors": ["PIEL", "NEGRO", "ROSADO"],
     "brand": "gaynor minden",
     "price": "1300",
@@ -292,7 +243,7 @@
   {
     "id": "D031",
     "name": "MEDIAS DE BALLET HOMBRES JONATHAN",
-    "category": "LYM",
+    "category": "PANTALONES",
     "colors": ["NEGRO", "BLANCO"],
     "brand": "SANSHA",
     "price": "2000",
@@ -306,19 +257,10 @@
     "colors": ["ROSADO"],
     "brand": "SANSHA",
     "price": "700",
-    "imageSrc": ["/images/recital/products/YO710.png"],
+    "imageSrc": ["/images/recital/products/Y0710.png"],
     "description": "Falda de ballet rosada para actuaciones elegantes."
   },
-  {
-    "id": "L0715",
-    "name": "FALDAS SANSHA SKYE",
-    "category": "PANTALONES",
-    "colors": ["NEGRO"],
-    "brand": "SANSHA",
-    "price": "800",
-    "imageSrc": ["/images/recital/products/L0715.png"],
-    "description": "Falda de ballet Skye negra para un look clásico."
-  },
+ 
   {
     "id": "D066",
     "name": "SHORT INDIANAPOLIS",
@@ -339,14 +281,14 @@
     "imageSrc": ["/images/recital/products/TF1810.png"],
     "description": "Tutu romántico blanco y rosado para actuaciones de ballet."
   },
-  {
-    "id": "DF014",
+    {
+    "id": "TF014",
     "name": "TUTU BLANCO DE PLATOS SYLVIA",
     "category": "PANTALONES",
     "colors": ["BLANCO"],
     "brand": "SANSHA",
     "price": "3800",
-    "imageSrc": ["/images/recital/products/DF014.png"],
+    "imageSrc": ["/images/recital/products/TF014.png"],
     "description": "Tutu blanco de platos clásico para ballet profesional."
   },
   {
@@ -359,16 +301,7 @@
     "imageSrc": ["/images/recital/products/KT003.png"],
     "description": "Calentadores de piernas para mantener los músculos calientes."
   },
-  {
-    "id": "CBPAD",
-    "name": "PLUMILLAS DE SILICOM",
-    "category": "ACCESORIOS",
-    "colors": ["ROSADO"],
-    "brand": "SANSHA",
-    "price": "800",
-    "imageSrc": ["/images/recital/products/CBPAD.png"],
-    "description": "Protectores de silicona para mayor comodidad en zapatillas de punta."
-  },
+
   {
     "id": "CG-PAD",
     "name": "PLUMILLAS DE TELA Y SILICOM",
@@ -440,25 +373,16 @@
     "description": "Bandas elásticas Sansha para ejercicios de estiramiento."
   },
   {
-    "id": "KEEPAD",
+    "id": "KNEEPAD",
     "name": "RODILLERAS SANSHA",
     "category": "ACCESORIOS",
     "colors": ["NEGRO", "BEIGE"],
     "brand": "SANSHA",
     "price": "700",
-    "imageSrc": ["/images/recital/products/KEEPAD.png"],
+    "imageSrc": ["/images/recital/products/KNEEPAD.png"],
     "description": "Rodilleras para protección adicional durante la danza."
   },
-  {
-    "id": "SSR",
-    "name": "CINTAS SANSHSA SEDA",
-    "category": "ACCESORIOS",
-    "colors": ["ROSADO"],
-    "brand": "SANSHA",
-    "price": "350",
-    "imageSrc": ["/images/recital/products/SSR.png"],
-    "description": "Cintas de seda Sansha para asegurar zapatillas de punta."
-  },
+
   {
     "id": "PERRUBIA",
     "name": "PERRUBIA 1 LIBRA",
@@ -468,5 +392,15 @@
     "price": "1000",
     "imageSrc": ["/images/recital/products/PERRUBIA.png"],
     "description": "Resina de 1 libra para mejorar el agarre de las zapatillas."
+  },
+  {
+    "id": "B52",
+    "name": "TENIS BOTAS EN PIEL",
+    "category": "CALZADO",
+    "colors": ["NEGRO"],
+    "brand": "SANSHA",
+    "price": "3000",
+    "imageSrc": ["/images/recital/products/B52.png"],
+    "description": "Botas de danza en piel con soporte adicional para el tobillo."
   }
 ]

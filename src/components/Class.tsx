@@ -83,7 +83,7 @@ export default function Class({
             <div className={`relative flex flex-col items-center  ${order === "first" ? "order-2" : "order-1"}
             ${phone} ${desktop ?? ""}
             `}>
-                <div className="flex gap-8">
+                <div className="flex gap-8 lg:gap-12">
                     <div className="flex flex-col items-center gap-4">
                         <Calendar className={`w-6 h-6 md:w-8 md:h-8`} />
                         <div className="flex flex-col gap-1">

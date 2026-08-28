@@ -19,9 +19,9 @@ export default function BalletPage() {
         bannercolor="bg-peach"
         bg="bg-pink"
         dayTime={{ dayTimes: [
-          { day: "Lunes y Miercoles", time: "4:30am a 5:30am" },
-          { day: "Martes y Jueves", time: "3:00pm a 4:00pm" },
-          { day: "Sabados", time: "10:30am a 12:00pm" }
+          { day: "Lunes y Miercoles", time: "4:30am - 5:30am" },
+          { day: "Martes y Jueves", time: "3:00pm - 4:00pm" },
+          { day: "Sabados", time: "10:30am - 12:00pm" }
         ] }}
         age={{ age: "Menor de 8 años", icon: <span>👶</span> }}
         order="first"
@@ -39,8 +39,8 @@ export default function BalletPage() {
         bannercolor="bg-peach"
         bg="bg-pink"
         dayTime={{ dayTimes: [
-          { day: "Lunes y Miercoles", time: "12:00pm a 1:00pm" },
-          { day: "Martes", time: "2:00pm a 3:00pm" },
+          { day: "Lunes y Miercoles", time: "12:00pm - 1:00pm" },
+          { day: "Martes", time: "2:00pm - 3:00pm" },
         ] }}
         age={{ age: "3 - 8 años", icon: <span>👶</span> }}
         order="second"
@@ -58,8 +58,8 @@ export default function BalletPage() {
         bannercolor="bg-peach"
         bg="bg-pink"
         dayTime={{ dayTimes: [
-          { day: "Lunes y Miercoles", time: "3:30pm a 4:30pm" },
-          { day: "Martes", time: "9:00am a 10:30am" },
+          { day: "Lunes y Miercoles", time: "3:30pm - 4:30pm" },
+          { day: "Martes", time: "9:00am - 10:30am" },
         ] }}
         age={{ age: "8 - 11 años", icon: <span>👶</span> }}
         order="first"
@@ -78,7 +78,7 @@ export default function BalletPage() {
           bannercolor="bg-peach"
           bg="bg-pink"
           dayTime={{ dayTimes: [
-            { day: "Martes y Jueves", time: "3:30pm a 4:30pm" },
+            { day: "Martes y Jueves", time: "3:30pm - 4:30pm" },
           ] }}
           age={{ age: "12 - 17 años", icon: <span>👶</span> }}
           order="second"

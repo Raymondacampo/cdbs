@@ -11,11 +11,11 @@ import Class from "../../components/Class";
 export const metadata = { title: "Otras disciplinas — CDBS" };
 
 const pilatesSchedule = { dayTimes: [
-  { day: "Martes y Jueves", time: "6:30pm a 7:30pm" },
+  { day: "Martes y Jueves", time: "6:30pm - 7:30pm" },
 ] };
 
 const acondSchedule = { dayTimes: [
-  { day: "Martes", time: "7:00pm a 8:30pm" },
+  { day: "Martes", time: "7:00pm - 8:30pm" },
 ] };
 
 export default function OthersPage() {
@@ -29,7 +29,7 @@ export default function OthersPage() {
               </h1>            
           </div>
 
-          <div className={`flex flex-col lg:flex-row items-center gap-4 lg:max-w-6xl p-2 w-full `}>
+          <div className={`flex flex-col lg:flex-row items-center gap-4 lg:max-w-6xl p-2 w-full lg:mt-16`}>
               <Image src={pilates} alt={`DANZA PILATES`} className='relative -bottom-2 order-2 w-[80dvw] md:w-[45dvh] lg:w-[65dvh] mx-auto'/>
               
               <div className={`relative top-0 flex flex-col items-center max-w-2xl mx-auto`}>
@@ -70,7 +70,7 @@ export default function OthersPage() {
               </h1>            
           </div>
 
-          <div className={`flex items-start lg:max-w-4xl p-2 w-full lg:mt-16 `}>
+          <div className={`flex items-start lg:max-w-3xl p-2 w-full lg:mt-20`}>
               <Image src={acond1} alt={`ACONDICIONAMIENTO FISICO Y TECNICA DE JAZZ`} className='absolute bottom-0 left-4 w-[30dvw] md:w-[18dvw] lg:w-[13dvw] md:left-12 lg:left-48'/>
               <Image src={acond2} alt={`ACONDICIONAMIENTO FISICO Y TECNICA DE JAZZ`} className='absolute bottom-0 -right-8 w-[50dvw] md:w-[32dvw] lg:w-[25dvw] md:right-0'/>
               <div className={`relative top-0 flex flex-col items-center`}>
