@@ -67,7 +67,7 @@ export default function BalletPage() {
         variant="right"
         centerText="md:relative text-5xl md:-left-32 lg:left-36"
       >
-        BALLET l
+        BALLET I
       </Class>
 
       <div className="relative pb-8 bg-pink">
