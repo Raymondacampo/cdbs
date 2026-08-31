@@ -72,9 +72,9 @@ export default function DashboardPage() {
         <H2 className="block md:hidden bg-dark py-4 text-white! text-center font-bold mb-12">NUESTRAS CLASES</H2>
         {/* Mobile view */}
         <div className="md:hidden flex flex-col">
-          <MobileClass variant="right" order="second" src={bhome} width="w-[70%] top-4 relative" btn="right-[15%]" link="/ballet">BALLET</MobileClass>
-          <MobileClass variant="left" order="first" src={phome} width="w-[80%] top-4 right-[10%] relative" link="/others">PILATES Y MÁS</MobileClass>
-          <MobileClass variant="right" order="second" src={hjhomemobile} width="w-[50%] relative top-4 right-[5%]" btn="right-[8%]" link="/hiphop-jazz">HIP-HOP & JAZZ</MobileClass>
+          <MobileClass variant="right" order="second" src={bhome} width="w-[70%] top-4 relative" btn="right-[10dvw]" link="/ballet">BALLET</MobileClass>
+          <MobileClass variant="left" order="first" src={phome} width="w-[80%] top-4 right-[10%] relative" btn="left-[2dvw]" link="/others">PILATES Y MÁS</MobileClass>
+          <MobileClass variant="right" order="second" src={hjhomemobile} width="w-[50%] relative top-4 right-[5%]" btn="right-[2dvw]" link="/hiphop-jazz">HIP-HOP & JAZZ</MobileClass>
         </div>
 
         {/* Desktop view */}
@@ -101,7 +101,7 @@ export default function DashboardPage() {
         <div className="flex items-start justify-center">
           <div className="flex flex-col md:flex-row items-center relative -gap-8 ">
             <div className="relative md:order-2 h-[30dvh] w-[30dvh] md:w-[45dvw]">
-              <Image src={Gaynor} alt={'Gaynor'} className="absolute left-[10%] -top-[20%] rotate-18 w-[30dvh]"/>
+              <Image src={Gaynor} alt={'Gaynor'} className="absolute left-[13%] -top-[20%] rotate-18 w-[28dvh]"/>
             </div>
             <div className="relative rounded-xl transition-shadow flex flex-col items-center md:items-end md:w-[45dvw]">
               <Image src={recitallogo} alt={'Recital Logo'} className="w-60 md:w-[70%] lg:w-[60%] xl:w-[50%] md:relative md:left-[10%]"/>

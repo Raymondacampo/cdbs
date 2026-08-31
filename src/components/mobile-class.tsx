@@ -50,7 +50,7 @@ export default function MobileClass({
         <div className={`flex w-full justify-between items-center px-4 relative z-20`}>
             <Image src={src ?? "/path/to/image.jpg"} alt={`${children}`} className={[`${width ?? ""}`, className].filter(Boolean).join(" ")}/>
             <Link href={link} className={`${orderClasses[order]} ${btn} relative`}>
-              <Button size="md" className=" w-32! mt-4 ">
+              <Button size="lg" className=" w-38 mt-4 rounded-full!">
                   Ver clases
               </Button>            
             </Link>
