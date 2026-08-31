@@ -105,7 +105,7 @@ export default function DashboardPage() {
             </div>
             <div className="relative rounded-xl transition-shadow flex flex-col items-center md:items-end md:w-[45dvw]">
               <Image src={recitallogo} alt={'Recital Logo'} className="w-60 md:w-[70%] lg:w-[60%] xl:w-[50%] md:relative md:left-[10%]"/>
-               <p className="text-center block text-xs md:text-base md:text-end max-w-md">Visita la tienda con la mas amplia variedad de productos para la danza en santo domingo</p>
+               <p className="text-center block text-sm md:text-base md:text-end max-w-md">Visita la tienda con la mas amplia variedad de productos para la danza en santo domingo</p>
               <Link href="/recital" className="flex justify-end">
                 <Button size="md" className=" mx-auto mt-4">
                   Ver Tienda
