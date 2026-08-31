@@ -39,7 +39,7 @@ export default function DashboardPage() {
   return (
     <div className="flex flex-col">
       {/* Hero section */}
-      <section className="flex w-full items-end overflow-hidden bg-blush h-[80dvh] max-h-[600px] px-4 relative text-center shadow-xl 
+      <section className="flex w-full items-end overflow-x-hidden bg-blush h-[80dvh] max-h-[600px] px-4 relative text-center shadow-xl 
       sm:min-h-[50dvh]
       md:mb-8 md:h-[90dvh]
       xl:h-[70dvh] xl:max-h-none">
@@ -67,7 +67,7 @@ export default function DashboardPage() {
       </section>
 
       {/* Classes overview */}
-      <section className="w-full bg-pink md:bg-white md:py-16 max-w-7xl mx-auto mb-24">
+      <section className="w-full overflow-x-hidden bg-pink md:bg-white md:py-16 max-w-7xl mx-auto mb-24">
         <H2 className="h2 hidden md:block text-center font-bold mb-16">NUESTRAS CLASES</H2>
         <H2 className="block md:hidden bg-dark py-4 text-white! text-center font-bold mb-12">NUESTRAS CLASES</H2>
         {/* Mobile view */}
