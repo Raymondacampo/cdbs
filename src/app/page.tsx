@@ -101,7 +101,7 @@ export default function DashboardPage() {
         <div className="flex items-start justify-center">
           <div className="flex flex-col md:flex-row items-center relative -gap-8 ">
             <div className="relative md:order-2 h-[30dvh] w-[30dvh] md:w-[45dvw]">
-              <Image src={Gaynor} alt={'Gaynor'} className="absolute left-[13%] -top-[20%] rotate-18 w-[28dvh]"/>
+              <Image src={Gaynor} alt={'Gaynor'} className="absolute left-[20%] -top-[8%] rotate-18 w-[25dvh]"/>
             </div>
             <div className="relative rounded-xl transition-shadow flex flex-col items-center md:items-end md:w-[45dvw]">
               <Image src={recitallogo} alt={'Recital Logo'} className="w-60 md:w-[70%] lg:w-[60%] xl:w-[50%] md:relative md:left-[10%]"/>
