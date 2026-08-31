@@ -71,9 +71,9 @@ export default function DashboardPage() {
         <H2 className="block md:hidden bg-dark py-4 text-white! text-center font-bold mb-12">NUESTRAS CLASES</H2>
         {/* Mobile view */}
         <div className="md:hidden flex flex-col">
-          <MobileClass variant="left" order="second" src={bhome} width="w-[55dvw]" link="/ballet">BALLET</MobileClass>
-          <MobileClass variant="right" order="first" src={phome} width="w-[55dvw]" link="/others">PILATES Y MÁS</MobileClass>
-          <MobileClass variant="left" order="second" src={hjhomemobile} width="w-[40dvw]" className="relative left-4 top-4" link="/hiphop-jazz">HIP-HOP & JAZZ</MobileClass>
+          <MobileClass variant="right" order="second" src={bhome} width="w-[70%] top-4 relative" btn="right-[15%]" link="/ballet">BALLET</MobileClass>
+          <MobileClass variant="left" order="first" src={phome} width="w-[80%] top-4 right-[10%] relative" link="/others">PILATES Y MÁS</MobileClass>
+          <MobileClass variant="right" order="second" src={hjhomemobile} width="w-[50%] relative top-4 right-[5%]" btn="right-[8%]" link="/hiphop-jazz">HIP-HOP & JAZZ</MobileClass>
         </div>
 
         {/* Desktop view */}
@@ -96,34 +96,23 @@ export default function DashboardPage() {
       </section>
 
       {/* Store overview */}
-      <section className="pb-12 md:py-24 px-4 max-w-7xl mx-auto relative">
+      <section className="pb-6 md:py-24 px-4 max-w-7xl mx-auto relative">
         <div className="flex items-start justify-center">
-
-          { /* DESKTOP */ }
-          <div className=" hidden rounded-xl p-6 transition-shadow md:flex flex-col max-w-md justify-end relative top-10
-          md:items-center">
-            <Image src={recitallogo} alt={'Recital Logo'} className="w-800 md:w-110"/>
-            <div className="flex flex-col items-end relative right-15">
-              <p className="text-end block">Visita la tienda con la mas amplia variedad de productos para la danza en santo domingo</p>
-              <Link href="/recital">
-              <Button size="md" className="md:mt-4 ml-auto hover:cursor-pointer">
-                Ver Tienda
-              </Button>              
+          <div className="flex flex-col md:flex-row items-center relative -gap-8 ">
+            <div className="relative md:order-2 h-[30dvh] w-[30dvh] md:w-[45dvw]">
+              <Image src={Gaynor} alt={'Gaynor'} className="absolute left-[10%] -top-[20%] rotate-18 w-[30dvh]"/>
+            </div>
+            <div className="relative rounded-xl transition-shadow flex flex-col items-center md:items-end md:w-[45dvw]">
+              <Image src={recitallogo} alt={'Recital Logo'} className="w-60 md:w-[70%] lg:w-[60%] xl:w-[50%] md:relative md:left-[10%]"/>
+               <p className="text-center block text-xs md:text-base md:text-end max-w-md">Visita la tienda con la mas amplia variedad de productos para la danza en santo domingo</p>
+              <Link href="/recital" className="flex justify-end">
+                <Button size="md" className=" mx-auto mt-4">
+                  Ver Tienda
+                </Button>
               </Link>
             </div>
           </div>
 
-          { /* MOBILE */ }
-          <div className="rounded-xl py-6 transition-shadow flex flex-col justify-end top-10 mr-auto
-          md:hidden">
-            <Image src={recitallogo} alt={'Recital Logo'} className="w-50"/>
-            <Link href="/recital" className="flex justify-end">
-              <Button size="md" className="w-[70%] mx-auto">
-                Ver Tienda
-              </Button>
-            </Link>
-          </div>
-          <Image src={Gaynor} alt={'Gaynor'} className="absolute -z-10 right-0 md:relative w-50 md:w-80 mb-4 rotate-32"/>
         </div>
       </section>
 
@@ -145,7 +134,7 @@ export default function DashboardPage() {
             </Link>
           </div>
           <Link href="/about-us">
-            <Button size="lg" className="mt-2 absolute md:hidden top-42 right-4">
+            <Button size="lg" className="mt-2 absolute md:hidden top-42 right-6">
               Ver historia
             </Button>
           </Link>
