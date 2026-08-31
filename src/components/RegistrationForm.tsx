@@ -41,6 +41,7 @@ const initialState: FormState = {
 
 export default function RegistrationForm() {
   const searchParams = useSearchParams();
+  const planParam = searchParams.get("plan");
   const [state, formAction, isPending] = useActionState(submitRegistration, initialState);
 
   // Estados del formulario
