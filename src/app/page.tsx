@@ -41,7 +41,8 @@ export default function DashboardPage() {
       {/* Hero section */}
       <section className="flex w-full items-end overflow-hidden bg-blush h-[80dvh] max-h-[600px] px-4 relative text-center shadow-xl 
       sm:min-h-[50dvh]
-      md:mb-8 md:h-[90dvh]">
+      md:mb-8 md:h-[90dvh]
+      xl:h-[70dvh] xl:max-h-none">
       <InclineDiv variant="right" color="pink" size="lg" className="md:mt-4 text-start top-16 z-10">LAS MAS<br className="hidden lg:block"></br> PEQUEÑAS</InclineDiv>
         <div className="flex relative w-full justify-between items-end mx-auto max-w-7xl">
           {/* TODO: replace with actual hero image */}
