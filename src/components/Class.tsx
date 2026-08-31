@@ -68,7 +68,7 @@ export default function Class({
   ...props
 }: ClassProps) {
   return (
-    <div className={"w-full flex min-h-[55dvh] md:justify-center relative left-0 text-shadow-2xs [word-spacing:0.5rem] " + bg }
+    <div className={"w-full flex min-h-[60dvh] md:justify-center relative left-0 text-shadow-2xs [word-spacing:0.5rem] " + bg }
       {...props}
     >
         <div className={`absolute ${bannercolor} ${variantClasses[variant]} shadow-lg w-full py-4 flex md:justify-center ${order === "first" ? "justify-start" : "justify-end"}`}>
@@ -80,7 +80,8 @@ export default function Class({
         <div className={`flex items-center lg:max-w-4xl p-2 w-full relative z-20 ${orderClasses[order]} `}>
             <Image src={img.src ?? "/path/to/image.jpg"} alt={`${children}`} className={[`${img.width ?? ""} ${order === "first" ? "order-1" : "order-2"} `, img.position ?? ""].filter(Boolean).join(" ")}/>
             
-            <div className={`relative flex flex-col items-center  ${order === "first" ? "order-2" : "order-1"}
+            {/* Horarios */}
+            <div className={`relative flex flex-col items-center font-display wrap-none min-w-72.5 w-[80%]  ${order === "first" ? "order-2" : "order-1"}
             ${phone} ${desktop ?? ""}
             `}>
                 <div className="flex gap-8 lg:gap-12">
@@ -112,7 +113,7 @@ export default function Class({
                     </Button>  
                 </Link>
 
-                <p className={`text-center text-sm md:text-base mt-4 font-display ${bannercolor === 'bg-peach' ? 'text-shadow:1.5px_1.5px_1px_rgba(0,0,0,0.4)' : ''}`}>{description}</p>              
+                <p className={`text-center text-sm md:text-base mt-4 ${bannercolor === 'bg-peach' ? 'text-shadow:1.5px_1.5px_1px_rgba(0,0,0,0.4)' : ''}`}>{description}</p>              
             </div>
 
         </div>
