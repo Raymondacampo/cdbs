@@ -181,7 +181,7 @@ export default function RegistrationForm() {
               required
               className="px-3 py-2.5 rounded-xl border border-zinc-300 dark:border-zinc-700 bg-transparent text-dark dark:text-zinc-100 focus:outline-none focus:ring-2 focus:ring-zinc-500"
             >
-              <option value="" disabled selected>Día</option>
+              <option value="" disabled >Día</option>
               {Array.from({ length: 31 }, (_, i) => i + 1).map((d) => (
                 <option key={d} value={d} className="dark:bg-dark">{d}</option>
               ))}
@@ -192,7 +192,7 @@ export default function RegistrationForm() {
               required
               className="px-3 py-2.5 rounded-xl border border-zinc-300 dark:border-zinc-700 bg-transparent text-dark dark:text-zinc-100 focus:outline-none focus:ring-2 focus:ring-zinc-500"
             >
-              <option value="" disabled selected>Mes</option>
+              <option value="" disabled>Mes</option>
               {MESES.map((mes, idx) => (
                 <option key={mes} value={idx + 1} className="dark:bg-dark">{mes}</option>
               ))}
@@ -203,7 +203,7 @@ export default function RegistrationForm() {
               required
               className="px-3 py-2.5 rounded-xl border border-zinc-300 dark:border-zinc-700 bg-transparent text-dark dark:text-zinc-100 focus:outline-none focus:ring-2 focus:ring-zinc-500"
             >
-              <option value="" disabled selected>Año</option>
+              <option value="" disabled>Año</option>
               {Array.from({ length: 90 }, (_, i) => 2026 - i).map((a) => (
                 <option key={a} value={a} className="dark:bg-dark">{a}</option>
               ))}
@@ -221,7 +221,7 @@ export default function RegistrationForm() {
             required
             className="w-full px-3.5 py-2.5 rounded-xl border border-zinc-300 dark:border-zinc-700 bg-transparent text-dark dark:text-zinc-100 focus:outline-none focus:ring-2 focus:ring-zinc-500"
           >
-            <option value="" disabled selected>Selecciona una opción</option>
+            <option value="" disabled>Selecciona una opción</option>
             <option value="Masculino" className="dark:bg-dark">Masculino</option>
             <option value="Femenino" className="dark:bg-dark">Femenino</option>
             <option value="Otro" className="dark:bg-dark">Otro / Prefiero no decir</option>
