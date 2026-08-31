@@ -40,7 +40,7 @@ export default function InclineDiv({
 }: InclineDivProps) {
   return (
     <div className={[
-        "absolute w-full flex justify-center shadow-lg left-0 py-6 md:py-8 text-shadow-2xs [word-spacing:0.5rem]",
+        "absolute w-[102%] flex justify-center shadow-lg -left-[1%] py-6 md:py-8 text-shadow-2xs [word-spacing:0.5rem]",
         variantClasses[variant],
         colorClasses[color],
         sizeClasses[size],
@@ -49,7 +49,7 @@ export default function InclineDiv({
       ].filter(Boolean).join(" ")}
       {...props}
     >
-        <h1 className="w-full text-6xl text-center md:text-start md:max-w-7xl text-shadow-2xs [word-spacing:0.5rem]">
+        <h1 className="w-full text-5xl sm:text-6xl lg:text-8xl text-center md:text-start md:max-w-7xl text-shadow-2xs [word-spacing:0.5rem]">
             {children}
         </h1>
     </div>

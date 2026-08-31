@@ -37,12 +37,13 @@ const classes = [
 
 export default function DashboardPage() {
   return (
-    <div className="min-h-[80vh]">
+    <div className="flex flex-col">
       {/* Hero section */}
-      <section className="flex items-end overflow-hidden bg-blush min-h-[130dvw]  px-4 relative text-center shadow-xl 
-      md:mb-8 md:min-h-[70dvh] md:max-h-none">
-      <InclineDiv variant="right" color="pink" size="lg" className="md:mt-24 lg:mt-16 text-start top-16 z-10">LAS MAS<br className="hidden lg:block"></br> PEQUEÑAS</InclineDiv>
-        <div className="flex relative w-full h-full justify-between items-end mx-auto max-w-7xl">
+      <section className="flex w-full items-end overflow-hidden bg-blush h-[80dvh] max-h-[600px] px-4 relative text-center shadow-xl 
+      sm:min-h-[50dvh]
+      md:mb-8 md:h-[90dvh]">
+      <InclineDiv variant="right" color="pink" size="lg" className="md:mt-4 text-start top-16 z-10">LAS MAS<br className="hidden lg:block"></br> PEQUEÑAS</InclineDiv>
+        <div className="flex relative w-full justify-between items-end mx-auto max-w-7xl">
           {/* TODO: replace with actual hero image */}
           <div className="max-w-[60%] h-full mb-12 text-left 
           md:max-w-3xl
@@ -57,14 +58,15 @@ export default function DashboardPage() {
               </Link>
             </div>
           </div>
-          <Image src={pequenas} alt="Dance hero" className="absolute -right-34 bottom-0 z-10 max-w-76 
-          md:max-w-none md:w-[60%] md:relative md:right-0
-          lg:w-120" />
+          <Image src={pequenas} alt="Dance hero" className="absolute -right-[35%] bottom-0 z-10 w-[75%]
+          sm:w-[60%] sm:max-w-[350px] sm:-right-[10%]
+          md:max-w-[380px] md:w-[50%] md:relative md:right-0
+          lg:w-[40%] lg:min-w-[450px] lg:max-w-none" />
         </div>
       </section>
 
       {/* Classes overview */}
-      <section className="bg-pink md:bg-white md:py-16 max-w-7xl mx-auto mb-24">
+      <section className="w-full bg-pink md:bg-white md:py-16 max-w-7xl mx-auto mb-24">
         <H2 className="h2 hidden md:block text-center font-bold mb-16">NUESTRAS CLASES</H2>
         <H2 className="block md:hidden bg-dark py-4 text-white! text-center font-bold mb-12">NUESTRAS CLASES</H2>
         {/* Mobile view */}
