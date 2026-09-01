@@ -81,7 +81,7 @@ export default function Class({
             <Image src={img.src ?? "/path/to/image.jpg"} alt={`${children}`} className={[`${img.width ?? ""} ${order === "first" ? "order-1" : "order-2"} object-contain`, img.position ?? ""].filter(Boolean).join(" ")}/>
             
             {/* Horarios */}
-            <div className={`relative flex flex-col items-center font-display wrap-none min-w-72.5 w-[80%]  ${order === "first" ? "order-2" : "order-1"}
+            <div className={`relative flex flex-col items-center font-display wrap-none min-w-80 w-[80%]  ${order === "first" ? "order-2" : "order-1"}
             ${phone} ${desktop ?? ""}
             `}>
                 <div className="flex gap-8 lg:gap-12">
