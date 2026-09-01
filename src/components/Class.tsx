@@ -90,7 +90,7 @@ export default function Class({
                         <div className="flex flex-col gap-1">
                                 {dayTime.dayTimes.map(dt => 
                                 <div className="flex flex-col " key={dt.day}>
-                                    <p className={`text-sm md:text-xl ${bannercolor === 'bg-peach' ? 'text-shadow:1.5px_1.5px_1px_rgba(0,0,0,0.5)' : ''} max-w-xl font-bold [word-spacing:2px]`}>{`${dt.day}`}</p>
+                                    <p className={`text-base md:text-xl ${bannercolor === 'bg-peach' ? 'text-shadow:1.5px_1.5px_1px_rgba(0,0,0,0.5)' : ''} max-w-xl font-bold [word-spacing:2px]`}>{`${dt.day}`}</p>
                             </div>)}
                         </div>                    
                     </div>
@@ -98,14 +98,14 @@ export default function Class({
                         <Clock className={`w-6 h-6 md:w-8 md:h-8`} />
                         <div className="flex flex-col gap-1">{dayTime.dayTimes.map(dt => 
                             <div className="flex flex-col" key={dt.day}>
-                                <p className={`text-sm md:text-xl ${bannercolor === 'bg-peach' ? 'text-shadow:1.5px_1.5px_1px_rgba(0,0,0,0.5)' : ''} max-w-xl font-bold [word-spacing:2px]`}>{`${dt.time}`}</p>
+                                <p className={`text-base md:text-xl ${bannercolor === 'bg-peach' ? 'text-shadow:1.5px_1.5px_1px_rgba(0,0,0,0.5)' : ''} max-w-xl font-bold [word-spacing:2px]`}>{`${dt.time}`}</p>
                             </div>)}
                         </div>                    
                     </div>                    
                 </div>
                 <div className="flex items-end sm:items-center gap-2 mt-4 md:mt-8">
                     <Cake className="w-5 h-5" />
-                    <p className={`text-xs md:text-xl ${bannercolor === 'bg-peach' ? 'text-shadow:1.5px_1.5px_1px_rgba(0,0,0,0.5)' : ''} max-w-xl font-bold [word-spacing:2px]`}>{age.age}</p>
+                    <p className={`text-sm md:text-xl ${bannercolor === 'bg-peach' ? 'text-shadow:1.5px_1.5px_1px_rgba(0,0,0,0.5)' : ''} max-w-xl font-bold [word-spacing:2px]`}>{age.age}</p>
                 </div>
                 <Link href={`/inscripcion?disciplina=${children}`}>
                     <Button size="lg" className="w-32! h-10 mt-4">
