@@ -54,7 +54,7 @@ export default function BalletPage() {
       <Class
         phone="text-white max-w-[80%] mt-[4dvh] xl:mt-8"
         desktop="md:text-white md:max-w-[65%] md:top-4 md:mr-8"
-        img={{ src: balletI, width: "w-[50dvw] h-auto max-w-[280px] md:w-[30dvh] lg:h-[49dvh] lg:w-auto xl:h-[50.5dvh]", position: "absolute -right-[15%] sm:-right-[10%] bottom-0 md:-bottom-2 md:-rotate-1 md:right-[5%] md:bottom-1 lg:-left-8 lg:-bottom-6.5 lg:relative" }}
+        img={{ src: balletI, width: "w-[50dvw] h-auto max-w-[280px] md:w-[30dvh] lg:h-[49dvh] lg:w-auto xl:h-[50.5dvh]", position: "absolute -right-[18%] sm:-right-[10%] bottom-0 md:-bottom-2 md:-rotate-1 md:right-[5%] md:bottom-1 lg:-left-8 lg:-bottom-6.5 lg:relative" }}
         bannercolor="bg-peach"
         bg="bg-pink"
         dayTime={{ dayTimes: [
