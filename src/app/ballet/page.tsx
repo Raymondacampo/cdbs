@@ -12,10 +12,10 @@ export default function BalletPage() {
   return (
     <div className="flex flex-col bg-pink md:pt-12 overflow-hidden">
       <Class
-        phone="text-white top-10 max-w-[80%] mr-auto"
+        phone="text-white max-w-[80%] mt-[4dvh] md:mt-0 mr-auto"
         desktop="md:text-white md:max-w-[65%] md:top-8 md:mr-8"
-        img={{ src: movCreativo, width: "w-[60dvw] md:w-[30dvh] lg:w-[35dvh]", 
-        position: "absolute -right-24 -bottom-0 md:-rotate-1 md:right-10 md:bottom-1 lg:-bottom-13 lg:relative " }}
+        img={{ src: movCreativo, width: "w-[60dvw] h-auto sm:w-[50dvw] md:w-[40dvw] md:max-w-[330px] lg:max-w-none lg:w-auto lg:h-[50dvh] ", 
+        position: "absolute -right-[25%] bottom-0 sm:-right-[15%] md:bottom-1 md:-rotate-1 md:right-0 lg:relative lg:translate-y-[5.3%] xl:bottom-2 xl:translate-y-[8%]" }}
         bannercolor="bg-peach"
         bg="bg-pink"
         dayTime={{ dayTimes: [
@@ -27,15 +27,15 @@ export default function BalletPage() {
         order="first"
         description="Estimula coordinación, equilibrio y gracia a través del juego, la música y la creatividad."
         variant="right"
-        centerText="md:relative lg:-right-32"
+        centerText="md:relative "
       >
         MOVIMIENTO CREATIVO
       </Class>
 
       <Class
-        phone="text-white top-8 max-w-[80%]"
+        phone="text-white max-w-[80%] mt-[4dvh] xl:mt-8"
         desktop="md:text-white md:max-w-[65%] md:top-4 md:mr-8"
-        img={{ src: preballet, width: "w-[35dvw] md:w-[20dvh] lg:w-[25dvh]", position: "absolute lg:relative -left-10 md:left-0 bottom-4" }}
+        img={{ src: preballet, width: "w-[35dvw] max-w-[190px] md:w-[22dvh] md:max-w-[210px] lg:w-[25dvh]", position: "absolute lg:relative -left-10 md:left-[10%] bottom-4 lg:bottom-[15%]" }}
         bannercolor="bg-peach"
         bg="bg-pink"
         dayTime={{ dayTimes: [
@@ -46,15 +46,15 @@ export default function BalletPage() {
         order="second"
         description="Introduce a niños pequeños a la danza mediante juegos, música y ejercicios creativos que estimulan su coordinación y ritmo."
         variant="left"
-        centerText="md:relative text-4xl md:-right-24 lg:-left-32"
+        centerText="md:relative text-4xl "
       >
         PRE-BALLET
       </Class>
 
       <Class
-        phone="text-white top-8 max-w-[80%]"
+        phone="text-white max-w-[80%] mt-[4dvh] xl:mt-8"
         desktop="md:text-white md:max-w-[65%] md:top-4 md:mr-8"
-        img={{ src: balletI, width: "w-[50dvw] md:w-[30dvh] lg:w-[35dvh]", position: "absolute -right-16 bottom-0 md:-bottom-2 md:-rotate-1 md:bottom-1 lg:-left-8 lg:-bottom-3.5 lg:relative" }}
+        img={{ src: balletI, width: "w-[50dvw] h-auto max-w-[280px] md:w-[30dvh] lg:h-[49dvh] lg:w-auto xl:h-[50.5dvh]", position: "absolute -right-[18%] sm:-right-[10%] bottom-0 md:-bottom-2 md:-rotate-1 md:right-[5%] md:bottom-1 lg:-left-8 lg:-bottom-6.5 lg:relative" }}
         bannercolor="bg-peach"
         bg="bg-pink"
         dayTime={{ dayTimes: [
@@ -65,16 +65,16 @@ export default function BalletPage() {
         order="first"
         description="Fortalece técnica, coordinación, equilibrio y expresión artística en niñas mayores con ejercicios dinámicos."
         variant="right"
-        centerText="md:relative text-5xl md:-left-32 lg:left-36"
+        centerText="md:relative text-5xl"
       >
         BALLET I
       </Class>
 
       <div className="relative pb-8 bg-pink">
         <Class
-          phone="text-white top-6 max-w-[75%]"
+          phone="text-white max-w-[75%] mt-[4dvh] xl:mt-8"
           desktop="md:text-white md:max-w-[65%] md:top-4 md:mr-8"
-          img={{ src: adolescentes, width: "w-[60dvw] md:w-[30dvh] lg:w-[40dvh]", position: "absolute lg:relative -left-20 md:-left-8 -bottom-4" }}
+          img={{ src: adolescentes, width: "w-[60dvw] max-w-[320px] md:max-w-none md:w-[35dvh] lg:w-[40dvh]", position: "absolute sm:-left-[15%] lg:relative -left-[20%] md:-left-8 -bottom-4 lg:bottom-6" }}
           bannercolor="bg-peach"
           bg="bg-pink"
           dayTime={{ dayTimes: [
@@ -84,16 +84,16 @@ export default function BalletPage() {
           order="second"
           description="Perfecciona técnica, flexibilidad, postura y expresión artística a través de coreografías dinámicas."
           variant="left"
-          centerText="md:relative text-4xl md:-right-20 lg:-left-52"
+          centerText="md:relative text-4xl"
         >
           ADOLESCENTES
         </Class>   
       </div>
 
         <Class
-          phone="text-white top-4 max-w-[80%]"
+          phone="text-white max-w-[80%] mt-[4dvh] xl:mt-8"
           desktop="md:text-white md:max-w-[65%] md:top-4  md:mr-8"
-          img={{ src: avanzado, width: "w-[43dvw] md:w-[25dvh] lg:w-[30dvh]", position: "absolute -right-20 md:right-4 bottom-4  lg:relative " }}
+          img={{ src: avanzado, width: "w-[43dvw] max-w-[310px] md:w-[30dvh] md:max-w-none lg:w-[30dvh]", position: "absolute -right-[20%] md:right-4 bottom-4 lg:bottom-20 lg:relative " }}
           bannercolor="bg-peach"
           bg="bg-pink"
           dayTime={{ dayTimes: [
@@ -103,7 +103,7 @@ export default function BalletPage() {
           order="first"
           description="Perfecciona técnica, fuerza y expresión artística con trabajo de puntas y coreografías complejas."
           variant="right"
-          centerText="md:relative text-5xl md:-left-20 lg:left-32"
+          centerText="md:relative text-5xl"
         >
           AVANZADO
         </Class>   

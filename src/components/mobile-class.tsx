@@ -14,6 +14,7 @@ interface MobileClassProps extends React.HTMLAttributes<HTMLDivElement> {
   src?: string | StaticImageData;
   children: React.ReactNode;
   link: string;
+  btn?:string;
 }
 
 const variantClasses: Record<Variant, string> = {
@@ -34,10 +35,11 @@ export default function MobileClass({
   children,
   link,
   className = "",
+  btn,
   ...props
 }: MobileClassProps) {
   return (
-    <div className={"w-full flex min-h-[75dvw] justify-center relative left-0 text-shadow-2xs [word-spacing:0.5rem]"}
+    <div className={"w-full flex h-[95dvw] justify-center relative left-0 text-shadow-2xs [word-spacing:0.5rem]"}
       {...props}
     >
         <div className={`absolute bg-peach w-full py-4 ${variantClasses[variant]}`}>
@@ -45,10 +47,10 @@ export default function MobileClass({
                 {children}
             </h1>            
         </div>
-        <div className={`flex w-full justify-between items-center px-4 relative z-20 ${orderClasses[order]}`}>
+        <div className={`flex w-full justify-between items-center px-4 relative z-20`}>
             <Image src={src ?? "/path/to/image.jpg"} alt={`${children}`} className={[`${width ?? ""}`, className].filter(Boolean).join(" ")}/>
-            <Link href={link} >
-              <Button size="md" className={["relative w-32! mt-4", orderClasses[order]].join(" ")}>
+            <Link href={link} className={`${orderClasses[order]} ${btn} relative`}>
+              <Button size="lg" className=" w-38 mt-4 rounded-full!">
                   Ver clases
               </Button>            
             </Link>

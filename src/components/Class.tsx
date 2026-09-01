@@ -68,19 +68,20 @@ export default function Class({
   ...props
 }: ClassProps) {
   return (
-    <div className={"w-full flex min-h-[55dvh] md:justify-center relative left-0 text-shadow-2xs [word-spacing:0.5rem] " + bg }
+    <div className={"w-full flex flex-col justify-start items-center h-[60dvh] lg:h-[65dvh] relative left-0 text-shadow-2xs [word-spacing:0.5rem] " + bg }
       {...props}
     >
-        <div className={`absolute ${bannercolor} ${variantClasses[variant]} shadow-lg w-full py-4 flex md:justify-center ${order === "first" ? "justify-start" : "justify-end"}`}>
+        <div className={` ${bannercolor} ${variantClasses[variant]} lg:mb-0 shadow-lg w-full py-4 flex md:justify-center ${order === "first" ? "justify-start" : "justify-end"}`}>
             <h1 className={`font-bold text-3xl md:text-5xl lg:text-7xl w-full md:w-auto text-center  text-shadow-2xs [word-spacing:0.5rem] ${centerText ?? ""}`}>
                 {children}
             </h1>            
         </div>
 
-        <div className={`flex items-center lg:max-w-4xl p-2 w-full relative z-20 ${orderClasses[order]} `}>
-            <Image src={img.src ?? "/path/to/image.jpg"} alt={`${children}`} className={[`${img.width ?? ""} ${order === "first" ? "order-1" : "order-2"} `, img.position ?? ""].filter(Boolean).join(" ")}/>
+        <div className={`flex items-center lg:items-start lg:max-w-4xl p-2 w-full z-20 ${orderClasses[order]} `}>
+            <Image src={img.src ?? "/path/to/image.jpg"} alt={`${children}`} className={[`${img.width ?? ""} ${order === "first" ? "order-1" : "order-2"} object-contain`, img.position ?? ""].filter(Boolean).join(" ")}/>
             
-            <div className={`relative flex flex-col items-center  ${order === "first" ? "order-2" : "order-1"}
+            {/* Horarios */}
+            <div className={`relative flex flex-col items-center font-display wrap-none min-w-80 w-[80%]  ${order === "first" ? "order-2" : "order-1"}
             ${phone} ${desktop ?? ""}
             `}>
                 <div className="flex gap-8 lg:gap-12">
@@ -89,7 +90,7 @@ export default function Class({
                         <div className="flex flex-col gap-1">
                                 {dayTime.dayTimes.map(dt => 
                                 <div className="flex flex-col " key={dt.day}>
-                                    <p className={`text-sm md:text-xl ${bannercolor === 'bg-peach' ? 'text-shadow:1.5px_1.5px_1px_rgba(0,0,0,0.5)' : ''} max-w-xl font-bold [word-spacing:2px]`}>{`${dt.day}`}</p>
+                                    <p className={`text-base md:text-xl ${bannercolor === 'bg-peach' ? 'text-shadow:1.5px_1.5px_1px_rgba(0,0,0,0.5)' : ''} max-w-xl font-bold [word-spacing:2px]`}>{`${dt.day}`}</p>
                             </div>)}
                         </div>                    
                     </div>
@@ -97,22 +98,22 @@ export default function Class({
                         <Clock className={`w-6 h-6 md:w-8 md:h-8`} />
                         <div className="flex flex-col gap-1">{dayTime.dayTimes.map(dt => 
                             <div className="flex flex-col" key={dt.day}>
-                                <p className={`text-sm md:text-xl ${bannercolor === 'bg-peach' ? 'text-shadow:1.5px_1.5px_1px_rgba(0,0,0,0.5)' : ''} max-w-xl font-bold [word-spacing:2px]`}>{`${dt.time}`}</p>
+                                <p className={`text-base md:text-xl ${bannercolor === 'bg-peach' ? 'text-shadow:1.5px_1.5px_1px_rgba(0,0,0,0.5)' : ''} max-w-xl font-bold [word-spacing:2px]`}>{`${dt.time}`}</p>
                             </div>)}
                         </div>                    
                     </div>                    
                 </div>
-                <div className="flex items-end gap-2 mt-4 md:mt-8">
+                <div className="flex items-end sm:items-center gap-2 mt-4 md:mt-8">
                     <Cake className="w-5 h-5" />
-                    <p className={`text-xs md:text-xl ${bannercolor === 'bg-peach' ? 'text-shadow:1.5px_1.5px_1px_rgba(0,0,0,0.5)' : ''} max-w-xl font-bold [word-spacing:2px]`}>{age.age}</p>
+                    <p className={`text-sm md:text-xl ${bannercolor === 'bg-peach' ? 'text-shadow:1.5px_1.5px_1px_rgba(0,0,0,0.5)' : ''} max-w-xl font-bold [word-spacing:2px]`}>{age.age}</p>
                 </div>
                 <Link href={`/inscripcion?disciplina=${children}`}>
-                    <Button size="md" className="w-32! h-10 mt-4">
+                    <Button size="lg" className="w-32! h-10 mt-4">
                         Inscribirme!
                     </Button>  
                 </Link>
 
-                <p className={`text-center text-sm md:text-base mt-4 font-display ${bannercolor === 'bg-peach' ? 'text-shadow:1.5px_1.5px_1px_rgba(0,0,0,0.4)' : ''}`}>{description}</p>              
+                <p className={`text-center text-sm md:text-base mt-4 ${bannercolor === 'bg-peach' ? 'text-shadow:1.5px_1.5px_1px_rgba(0,0,0,0.4)' : ''}`}>{description}</p>              
             </div>
 
         </div>

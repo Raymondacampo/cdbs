@@ -37,12 +37,14 @@ const classes = [
 
 export default function DashboardPage() {
   return (
-    <div className="min-h-[80vh]">
+    <div className="flex flex-col">
       {/* Hero section */}
-      <section className="flex items-end overflow-hidden bg-blush min-h-[130dvw]  px-4 relative text-center shadow-xl 
-      md:mb-8 md:min-h-[70dvh] md:max-h-none">
-      <InclineDiv variant="right" color="pink" size="lg" className="md:mt-24 lg:mt-16 text-start top-16 z-10">LAS MAS<br className="hidden lg:block"></br> PEQUEÑAS</InclineDiv>
-        <div className="flex relative w-full h-full justify-between items-end mx-auto max-w-7xl">
+      <section className="flex w-full items-end overflow-x-hidden bg-blush h-[80dvh] max-h-[600px] px-4 relative text-center shadow-xl 
+      sm:min-h-[50dvh]
+      md:mb-8 md:h-[90dvh]
+      xl:h-[70dvh] xl:max-h-none">
+      <InclineDiv variant="right" color="pink" size="lg" className="md:mt-4 text-start top-16 z-10">LAS MAS<br className="hidden lg:block"></br> PEQUEÑAS</InclineDiv>
+        <div className="flex relative w-full justify-between items-end mx-auto max-w-7xl">
           {/* TODO: replace with actual hero image */}
           <div className="max-w-[60%] h-full mb-12 text-left 
           md:max-w-3xl
@@ -57,21 +59,22 @@ export default function DashboardPage() {
               </Link>
             </div>
           </div>
-          <Image src={pequenas} alt="Dance hero" className="absolute -right-34 bottom-0 z-10 max-w-76 
-          md:max-w-none md:w-[60%] md:relative md:right-0
-          lg:w-120" />
+          <Image src={pequenas} alt="Dance hero" className="absolute -right-[35%] bottom-0 z-10 w-[75%]
+          sm:w-[60%] sm:max-w-[350px] sm:-right-[10%]
+          md:max-w-[380px] md:w-[50%] md:relative md:right-0
+          lg:w-[40%] lg:min-w-[450px] lg:max-w-none" />
         </div>
       </section>
 
       {/* Classes overview */}
-      <section className="bg-pink md:bg-white md:py-16 max-w-7xl mx-auto mb-24">
+      <section className="w-full overflow-x-hidden bg-pink md:bg-white md:py-16 max-w-7xl mx-auto mb-24">
         <H2 className="h2 hidden md:block text-center font-bold mb-16">NUESTRAS CLASES</H2>
         <H2 className="block md:hidden bg-dark py-4 text-white! text-center font-bold mb-12">NUESTRAS CLASES</H2>
         {/* Mobile view */}
         <div className="md:hidden flex flex-col">
-          <MobileClass variant="left" order="second" src={bhome} width="w-[55dvw]" link="/ballet">BALLET</MobileClass>
-          <MobileClass variant="right" order="first" src={phome} width="w-[55dvw]" link="/others">PILATES Y MÁS</MobileClass>
-          <MobileClass variant="left" order="second" src={hjhomemobile} width="w-[40dvw]" className="relative left-4 top-4" link="/hiphop-jazz">HIP-HOP & JAZZ</MobileClass>
+          <MobileClass variant="right" order="second" src={bhome} width="w-[70%] top-4 relative" btn="right-[10dvw]" link="/ballet">BALLET</MobileClass>
+          <MobileClass variant="left" order="first" src={phome} width="w-[80%] top-4 right-[10%] relative" btn="left-[2dvw]" link="/others">PILATES Y MÁS</MobileClass>
+          <MobileClass variant="right" order="second" src={hjhomemobile} width="w-[50%] relative top-4 right-[5%]" btn="right-[2dvw]" link="/hiphop-jazz">HIP-HOP & JAZZ</MobileClass>
         </div>
 
         {/* Desktop view */}
@@ -94,34 +97,23 @@ export default function DashboardPage() {
       </section>
 
       {/* Store overview */}
-      <section className="pb-12 md:py-24 px-4 max-w-7xl mx-auto relative">
+      <section className="pb-6 md:py-24 px-4 max-w-7xl mx-auto relative">
         <div className="flex items-start justify-center">
-
-          { /* DESKTOP */ }
-          <div className=" hidden rounded-xl p-6 transition-shadow md:flex flex-col max-w-md justify-end relative top-10
-          md:items-center">
-            <Image src={recitallogo} alt={'Recital Logo'} className="w-800 md:w-110"/>
-            <div className="flex flex-col items-end relative right-15">
-              <p className="text-end block">Visita la tienda con la mas amplia variedad de productos para la danza en santo domingo</p>
-              <Link href="/recital">
-              <Button size="md" className="md:mt-4 ml-auto hover:cursor-pointer">
-                Ver Tienda
-              </Button>              
+          <div className="flex flex-col md:flex-row items-center relative -gap-8 ">
+            <div className="relative md:order-2 h-[30dvh] w-[30dvh] md:w-[45dvw]">
+              <Image src={Gaynor} alt={'Gaynor'} className="absolute left-[20%] -top-[8%] rotate-18 w-[25dvh]"/>
+            </div>
+            <div className="relative rounded-xl transition-shadow flex flex-col items-center md:items-end md:w-[45dvw]">
+              <Image src={recitallogo} alt={'Recital Logo'} className="w-60 md:w-[70%] lg:w-[60%] xl:w-[50%] md:relative md:left-[10%]"/>
+               <p className="text-center block text-sm md:text-base md:text-end max-w-md">Visita la tienda con la mas amplia variedad de productos para la danza en santo domingo</p>
+              <Link href="/recital" className="flex justify-end">
+                <Button size="md" className=" mx-auto mt-4">
+                  Ver Tienda
+                </Button>
               </Link>
             </div>
           </div>
 
-          { /* MOBILE */ }
-          <div className="rounded-xl py-6 transition-shadow flex flex-col justify-end top-10 mr-auto
-          md:hidden">
-            <Image src={recitallogo} alt={'Recital Logo'} className="w-50"/>
-            <Link href="/recital" className="flex justify-end">
-              <Button size="md" className="w-[70%] mx-auto">
-                Ver Tienda
-              </Button>
-            </Link>
-          </div>
-          <Image src={Gaynor} alt={'Gaynor'} className="absolute -z-10 right-0 md:relative w-50 md:w-80 mb-4 rotate-32"/>
         </div>
       </section>
 
@@ -143,7 +135,7 @@ export default function DashboardPage() {
             </Link>
           </div>
           <Link href="/about-us">
-            <Button size="lg" className="mt-2 absolute md:hidden top-42 right-4">
+            <Button size="lg" className="mt-2 absolute md:hidden top-42 right-6">
               Ver historia
             </Button>
           </Link>
