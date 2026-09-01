@@ -9,7 +9,7 @@ export const metadata = { title: "Hip Hop & Jazz — CDBS" };
 
 export default function HiphopJazzPage() {
   return (
-    <div className="flex flex-col bg-peach md:pt-12 overflow-hidden">
+    <div className="flex flex-col bg-peach md:pt-12 mt-4 overflow-hidden">
       <Class
         phone="text-dark top-4 max-w-[75%] mr-auto mt-[3dvh]"
         desktop="md:max-w-[65%] lg:top-4 md:mr-8"

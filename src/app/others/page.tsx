@@ -20,7 +20,7 @@ const acondSchedule = { dayTimes: [
 
 export default function OthersPage() {
   return (
-    <div className="flex flex-col items-start">
+    <div className="flex flex-col items-start mt-4">
       {/* { DANZA PILATES SECTION } */}
       <div className={"w-full flex items-center flex-col min-h-[70dvh] relative left-0 text-shadow-2xs [word-spacing:0.5rem] md:min-h-[50dvh] lg:min-h-[60dvh]  "}>
           <div className={`bg-pink shadow-lg w-full py-4 flex md:justify-center mb-4`}>
