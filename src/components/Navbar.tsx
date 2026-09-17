@@ -46,13 +46,13 @@ export default function Navbar() {
           onClick={() => setOpen((o) => !o)}
         >
           <span
-            className={`block w-6 h-0.5 bg-white transition-transform duration-300 ${open ? "rotate-45 translate-y-2" : ""}`}
+            className={`block w-6 h-0.5 bg-dark transition-transform duration-300 ${open ? "rotate-45 translate-y-2" : ""}`}
           />
           <span
-            className={`block w-6 h-0.5 bg-white transition-opacity duration-300 ${open ? "opacity-0" : ""}`}
+            className={`block w-6 h-0.5 bg-dark transition-opacity duration-300 ${open ? "opacity-0" : ""}`}
           />
           <span
-            className={`block w-6 h-0.5 bg-white transition-transform duration-300 ${open ? "-rotate-45 -translate-y-2" : ""}`}
+            className={`block w-6 h-0.5 bg-dark transition-transform duration-300 ${open ? "-rotate-45 -translate-y-2" : ""}`}
           />
         </button>
       </div>
