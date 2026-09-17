@@ -19,7 +19,7 @@ const quicksand = Quicksand({
 
 export const metadata: Metadata = {
   // Configuración base de la URL para resolver rutas de imágenes
-  metadataBase: new URL('https://tudominio.do'), // Sustituye por tu dominio .do real
+  metadataBase: new URL('https://www.centrodedanza.com.do/'), // Sustituye por tu dominio .do real
 
   // Título dinámico optimizado con palabras clave locales
   title: {
