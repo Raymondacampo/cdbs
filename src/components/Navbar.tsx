@@ -59,7 +59,7 @@ export default function Navbar() {
 
       {/* Mobile slide-in drawer */}
       <div
-        className={`md:hidden fixed top-16 right-0 h-[calc(100vh-4rem)] w-full bg-pink border-l border-pink/30 transform transition-transform duration-300 ease-in-out z-40 ${open ? "translate-x-0" : "translate-x-full"}`}
+        className={`md:hidden fixed top-16 right-0 h-[calc(100vh-4rem)] w-full bg-white border-l border-white transform transition-transform duration-300 ease-in-out z-40 ${open ? "translate-x-0" : "translate-x-full"}`}
       >
         <nav className="flex flex-col gap-1 p-6">
           {links.map((l) => (
