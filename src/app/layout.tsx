@@ -17,120 +17,149 @@ const quicksand = Quicksand({
   variable: "--font-display",
 });
 
-export const metadata: Metadata = {
-  // Configuración base de la URL para resolver rutas de imágenes
-  metadataBase: new URL('https://www.centrodedanza.com.do/'),
+const siteUrl = "https://www.centrodedanza.com.do";
+const siteName = "Centro de Danza Belkis Sandoval";
 
-  // Título dinámico optimizado con palabras clave locales
+export const metadata: Metadata = {
+  metadataBase: new URL(siteUrl),
+
   title: {
-    default: 'Centro de Danza Belkis Sandoval | Clases de Danza en Santo Domingo',
-    template: '%s | Centro de Danza Belkis Sandoval',
+    default:
+      "Clases de Baile, Ballet y Jazz en Santo Domingo | Centro de Danza Belkis Sandoval",
+    template: "%s | Centro de Danza Belkis Sandoval",
   },
 
-  // Descripción principal optimizada para SEO local
   description:
-    'Formación artística integral en Santo Domingo. Clases de ballet clásico, danza contemporánea, jazz y ritmos urbanos para niñas, jóvenes y adultos. ¡Inscríbete hoy!',
+    "¿Buscas clases de baile en Santo Domingo? Conoce el Centro de Danza Belkis Sandoval y nuestras clases de ballet clásico, jazz, danza contemporánea y ritmos urbanos. Consulta información e inscripción.",
 
-  // Palabras clave estratégicas para motores de búsqueda
+  // Las meta keywords no son un factor de posicionamiento de Google.
+  // Se conservan como metadato descriptivo, sin depender de ellas para el SEO.
   keywords: [
-    'Academia de danza Santo Domingo',
-    'Escuela de baile Santo Domingo',
-    'Clases de ballet en Santo Domingo',
-    'Belkis Sandoval',
-    'Danza contemporánea',
-    'Jazz baile República Dominicana',
-    'Clases de danza para niñas',
-    'Escuela de ballet clásico',
+    "clases de baile en Santo Domingo",
+    "escuela de baile en Santo Domingo",
+    "escuela de danza en Santo Domingo",
+    "academia de danza en Santo Domingo",
+    "clases de ballet en Santo Domingo",
+    "ballet clásico",
+    "clases de jazz",
+    "clases de hip hop",
+    "clases de danza para niñas",
+    "clases de baile para jóvenes y adultos",
+    "Centro de Danza Belkis Sandoval",
   ],
 
-  // Configuración de autores y marca
-  authors: [{ name: 'Centro de Danza Belkis Sandoval' }],
-  creator: 'Centro de Danza Belkis Sandoval',
-  publisher: 'Centro de Danza Belkis Sandoval',
+  applicationName: siteName,
+  authors: [{ name: siteName }],
+  creator: siteName,
+  publisher: siteName,
 
-  // Configuración Open Graph para previsualizaciones en WhatsApp, Instagram, Facebook y LinkedIn
   openGraph: {
-    title: 'Centro de Danza Belkis Sandoval | Formación Artística en Santo Domingo',
+    title:
+      "Clases de Baile, Ballet y Jazz en Santo Domingo | Centro de Danza Belkis Sandoval",
     description:
-      'Descubre la pasión por la danza. Impartimos clases de ballet clásico, jazz, contemporáneo y más para todas las edades en Santo Domingo.',
-    url: 'https://www.centrodedanza.com.do/',
-    siteName: 'Centro de Danza Belkis Sandoval',
-    locale: 'es_DO',
-    type: 'website',
+      "Descubre clases de ballet clásico, jazz, danza contemporánea y ritmos urbanos en Santo Domingo. Conoce el Centro de Danza Belkis Sandoval y consulta cómo comenzar.",
+    url: siteUrl,
+    siteName,
+    locale: "es_DO",
+    type: "website",
     images: [
       {
-        url: '/CDBS.png',
+        url: "/CDBS.png",
         width: 1200,
         height: 630,
-        alt: 'Alumnas en clase en el Centro de Danza Belkis Sandoval en Santo Domingo',
+        alt: "Centro de Danza Belkis Sandoval: clases de danza en Santo Domingo",
       },
     ],
   },
 
+  twitter: {
+    card: "summary_large_image",
+    title:
+      "Clases de Baile, Ballet y Jazz en Santo Domingo | Centro de Danza Belkis Sandoval",
+    description:
+      "Clases de ballet clásico, jazz, danza contemporánea y ritmos urbanos en Santo Domingo.",
+    images: ["/CDBS.png"],
+  },
+
   icons: {
     icon: [
-      { url: '/favicon.ico' },
-      { url: '/icon.png', type: 'image/png', sizes: '192x192' },
+      { url: "/favicon.ico" },
+      { url: "/icon.png", type: "image/png", sizes: "192x192" },
     ],
     apple: [
-      { url: '/apple-touch-icon.png', sizes: '180x180', type: 'image/png' },
+      { url: "/apple-touch-icon.png", sizes: "180x180", type: "image/png" },
     ],
   },
 
-  // Robots e indexación
   robots: {
     index: true,
     follow: true,
     googleBot: {
       index: true,
       follow: true,
-      'max-video-preview': -1,
-      'max-image-preview': 'large',
-      'max-snippet': -1,
+      "max-video-preview": -1,
+      "max-image-preview": "large",
+      "max-snippet": -1,
     },
   },
 };
 
-export default function RootLayout({ children }: { children: React.ReactNode }) {
-  // Estructura de Datos JSON-LD para Google Search y Google Maps
+export default function RootLayout({
+  children,
+}: {
+  children: React.ReactNode;
+}) {
   const jsonLd = {
-    '@context': 'https://schema.org',
-    '@type': 'DanceSchool',
-    'name': 'Centro de Danza Belkis Sandoval',
-    'image': 'https://www.centrodedanza.com.do/CDBS.png',
-    '@id': 'https://www.centrodedanza.com.do',
-    'url': 'https://www.centrodedanza.com.do',
-    'telephone': '+18095471394', 
-    'address': {
-      '@type': 'PostalAddress',
-      'streetAddress': 'Av. Dr. Fernando Alberto Defilló 375, Santo Domingo', 
-      'addressLocality': 'Santo Domingo',
-      'addressRegion': 'Distrito Nacional',
-      'addressCountry': 'DO',
+    "@context": "https://schema.org",
+    "@type": "DanceSchool",
+    "@id": `${siteUrl}/#dance-school`,
+    name: siteName,
+    url: siteUrl,
+    image: `${siteUrl}/CDBS.png`,
+    logo: `${siteUrl}/CDBS.png`,
+    description:
+      "Escuela de danza en Santo Domingo con formación en ballet clásico, jazz, danza contemporánea y ritmos urbanos.",
+    telephone: "+18095471394",
+    address: {
+      "@type": "PostalAddress",
+      streetAddress: "Av. Dr. Fernando Alberto Defilló 375",
+      addressLocality: "Santo Domingo",
+      addressRegion: "Distrito Nacional",
+      addressCountry: "DO",
     },
-    'geo': {
-      '@type': 'GeoCoordinates',
-      'latitude': 18.4585931, 
-      'longitude': -70.0010652, 
+    geo: {
+      "@type": "GeoCoordinates",
+      latitude: 18.4585931,
+      longitude: -70.0010652,
     },
-    'openingHoursSpecification': [
+    openingHoursSpecification: [
       {
-        '@type': 'OpeningHoursSpecification',
-        'dayOfWeek': ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'],
-        'opens': '14:00',
-        'closes': '20:00',
+        "@type": "OpeningHoursSpecification",
+        dayOfWeek: [
+          "Monday",
+          "Tuesday",
+          "Wednesday",
+          "Thursday",
+          "Friday",
+          "Saturday",
+        ],
+        opens: "14:00",
+        closes: "20:00",
       },
     ],
-    'sameAs': [
-      // Añade los enlaces a tus redes sociales oficiales si los tienes:
-      'https://www.instagram.com/belkissandovalcentrodedanza/',
-      'https://www.facebook.com/centrodedanzabelkisandoval',
+    areaServed: {
+      "@type": "City",
+      name: "Santo Domingo",
+    },
+    sameAs: [
+      "https://www.instagram.com/belkissandovalcentrodedanza/",
+      "https://www.facebook.com/centrodedanzabelkisandoval",
     ],
   };
 
   return (
     <html
-      lang="es"
+      lang="es-DO"
       className={`h-full antialiased overflow-x-hidden ${inter.variable} ${quicksand.variable}`}
     >
       <head>
@@ -138,7 +167,6 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
           rel="stylesheet"
           href="https://fonts.googleapis.com/css2?family=Sloop+Script&display=swap"
         />
-        {/* Inyección del esquema JSON-LD para SEO Local */}
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
